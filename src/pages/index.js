@@ -1,6 +1,6 @@
 
+import Inicio from "@/componentes/Inicio";
 import styles from "../styles/Home.module.css";
-import CarruselInicio from "../componentes/CarruselInicio"
 
 
 export default function Home() {
@@ -14,7 +14,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <CarruselInicio />
+        <Inicio />
       </main>
     </>
   );
