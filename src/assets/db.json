@@ -1,10 +1,17 @@
 {
-    "productos": 
+    "products": 
     [
         {
             "id":1,
             "name":"EJEMPLO",
             "price":10
+        }
+    ],
+
+    "cart":[
+        {
+            "id":0,
+            "name":"Ejemplo Cart"
         }
     ]
 }

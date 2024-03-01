@@ -1,16 +1,15 @@
-import AboutUs from "../componentes/AboutUs";
 import styles from "../styles/Home.module.css";
-import Layout from "../componentes/Layout";
-import Voluntarios from "../componentes/Voluntarios";
-import Adoptar from "../componentes/Adoptar";
+import Layout from "../components/Layout";
+import Voluntarios from "../components/Voluntarios";
+import Adoptar from "../components/Adoptar";
+import AboutUs from "../components/AboutUs";
 
-export default function Home() {
+export default function About_us() {
   return (
     <Layout title={"HUELLITAS - Conocenos"}> 
 
         <AboutUs />
         <Voluntarios />
-        <Adoptar />
 
     </Layout>
   );
