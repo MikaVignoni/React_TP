@@ -3,7 +3,6 @@ import styles from "@/styles/Home.module.css";
 import Inicio from "@/components/Inicio";
 import NavBar from "@/components/NavBar";
 
-
 export default function Home() {
   return (
     <>
@@ -15,7 +14,6 @@ export default function Home() {
       </Head>
       <main>
         <NavBar></NavBar>
-
         <Inicio/>
       </main>
     </>
