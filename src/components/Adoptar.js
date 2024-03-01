@@ -16,7 +16,7 @@ const Adoptar = () => {
   )
 }
 
-<style-jsx>
+<style jsx>
 .adopcion-container {
   max-width: 600px;
   margin: 0 auto;
@@ -33,4 +33,6 @@ const Adoptar = () => {
   line-height: 1.5;
   margin-bottom: 20px;
 }
-</style-jsx>
+</style>
+
+export default Adoptar
