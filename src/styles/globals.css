@@ -23,7 +23,6 @@ body {
     text-decoration: none;
     letter-spacing: 0.8px;
     overflow-x: hidden;
-    padding: 0px 30px;
 }
 
 
@@ -54,12 +53,19 @@ p {
 
 a {
     text-decoration: none;
+    color: black;
+    line-height: 1.8rem;
 }
 
 
 ul{
     list-style-type: none;
 }
+
+.Page-Content{
+    padding: 0px 30px;
+}
+
 
 
 /* * * * * * *  FIN reset   * * * * * * */
