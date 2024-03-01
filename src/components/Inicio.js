@@ -1,4 +1,4 @@
-
+import Link from 'next/link'
 
 
 const Inicio = () => {
@@ -8,12 +8,20 @@ const Inicio = () => {
 
     <p> Carrusel 3 fotos + Logo "huellitas" arriba + btn "conocenos"</p>
 
+    <Link href="/about_us" legacyBehavior>
+      <a> <h2> Conocenos </h2> </a> 
+    </Link>
+
 
     <style jsx> 
     {`
-      h2{
-        font-size: 1.5rem;
+
+      a{
+        font-size: medium;
+        text-decoration: none;
       }
+
+
     `}
     </style>
 

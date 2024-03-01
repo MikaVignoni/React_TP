@@ -1,5 +1,4 @@
 import Head from "next/head";
-import styles from "@/styles/Home.module.css";
 import Inicio from "@/components/Inicio";
 import NavBar from "@/components/NavBar";
 
@@ -15,6 +14,12 @@ export default function Home() {
       </Head>
       <main>
         <NavBar></NavBar>
+
+        <h1>Esto es un H1</h1>
+        <h2>Esto es un H2</h2>
+        <h3>Esto es un H3</h3>
+        <p>Esto es un p</p>
+
 
         <Inicio/>
       </main>
