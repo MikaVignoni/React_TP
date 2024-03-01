@@ -1,48 +1,30 @@
-import Link from 'next/link'
+import Link from 'next/link';
+import React from 'react';
 
-
-const NavBar = () => {
-  return ( <>
-    <nav>
-      <ul>
-
-        <li> 
-          <Link href="/" legacyBehavior>
-            <a>  INICIO </a> 
-          </Link>
-        </li> 
-
-        <li> 
-          <Link href="/about_us" legacyBehavior>
-            <a> About Us </a> 
-          </Link>
-        </li> 
-
-        <li> 
-          <Link href="/tienda" legacyBehavior>
-            <a> Tienda Solidaria </a> 
-          </Link>
-        </li> 
-
-
-
-      </ul>
-
-    </nav>
-
-
-    <style jsx> 
-    {`
-      nav{
-        background-color: var(--colorPrincipal);
-      }
-    `}
-    </style>
-
-
-
-  </> )
+const Navigation = () => {
+    return (
+        <nav>
+            <ul>
+                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                <li><a href="#voluntarios">Voluntarios</a></li>
+                <li><a href="#adopcion">Adopción</a></li>
+                <li><a href="#tienda-solidaria">Tienda Solidaria</a></li>
+            </ul>
+        </nav>
+    );
 }
 
+const NavBar = () => {
+    return (
+        <>
+            <Navigation />
+            <style jsx>{`
+                nav {
+                    background-color: var(--colorPrincipal);
+                }
+            `}</style>
+        </>
+    );
+}
 
-export default NavBar
+export default NavBar;
