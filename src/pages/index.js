@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Inicio from "@/components/Inicio";
 import NavBar from "@/components/NavBar";
+import Formulario from "@/components/Formulario";
 
 
 export default function Home() {
@@ -19,6 +20,8 @@ export default function Home() {
         <h2>Esto es un H2</h2>
         <h3>Esto es un H3</h3>
         <p>Esto es un p</p>
+
+        <Formulario></Formulario>
 
 
         <Inicio/>
