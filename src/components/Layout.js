@@ -1,4 +1,3 @@
-import styles from "../styles/Home.module.css";
 import NavBar from "../components/NavBar"
 import Footer  from "../components/Footer";
 import Head from 'next/head'

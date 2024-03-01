@@ -1,3 +1,5 @@
+"use client"
+
 import { useState } from 'react';
 import styles from "../styles/Home.module.css";
 
@@ -13,6 +15,16 @@ const Formulario = () => {
         e.preventDefault();
         console.log(formData);
     };
+
+    const handleChange = (e) => {
+        setFormData(form =>{
+            return {
+                ...form,
+                [e.target.name]: e.target.value
+            }
+        })
+        
+    }
 
     return (
         <form onSubmit={handleSubmit}>

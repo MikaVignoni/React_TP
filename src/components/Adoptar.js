@@ -1,3 +1,4 @@
+import Formulario from "./Formulario"
 
 
 const Adoptar = () => {
@@ -8,6 +9,8 @@ const Adoptar = () => {
         Queremos asegurarnos de brindarte toda la información necesaria para que puedas tomar la mejor decisión para ti y para tu futura mascota. Desde detalles sobre el cuidado y las necesidades de nuestros animales hasta consejos sobre la transición a su nuevo hogar, estamos aquí para ayudarte en cada paso del proceso. 
         Te invitamos a programar una visita al refugio, donde podrás conocer a nuestros adorables residentes y descubrir quién podría convertirse en tu compañero peludo ideal. 
         ¡Esperamos con ansias poder acompañarte en este emocionante viaje hacia la adopción de tu nueva mascota! </p>
+
+        <Formulario></Formulario>
 
     </div>
   )

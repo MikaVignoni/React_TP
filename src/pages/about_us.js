@@ -1,4 +1,3 @@
-import styles from "../styles/Home.module.css";
 import Layout from "../components/Layout";
 import Voluntarios from "../components/Voluntarios";
 import Adoptar from "../components/Adoptar";
@@ -10,6 +9,7 @@ export default function About_us() {
 
         <AboutUs />
         <Voluntarios />
+        <Adoptar />
 
     </Layout>
   );
