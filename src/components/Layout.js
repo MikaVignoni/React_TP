@@ -1,4 +1,3 @@
-import styles from "../styles/Home.module.css";
 import NavBar from "../components/NavBar"
 import Footer  from "../components/Footer";
 import Head from 'next/head'
@@ -13,13 +12,26 @@ export default function Layout({title,children}) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      
       <main>
-        <NavBar />
-        
-        {children}
 
+        <NavBar />
+        <div className="Page-Content">
+          {children}
+        </div>
         <Footer />
+
       </main>
+
+
+
+
+      <style jsx> {`
+
+      `} </style>
+
+
+
     </>
   );
 }

@@ -14,7 +14,13 @@ const NavBar = () => {
 
         <li> 
           <Link href="/about_us" legacyBehavior>
-            <a>  About Us </a> 
+            <a> About Us </a> 
+          </Link>
+        </li> 
+
+        <li> 
+          <Link href="/tienda" legacyBehavior>
+            <a> Tienda Solidaria </a> 
           </Link>
         </li> 
 
@@ -27,7 +33,9 @@ const NavBar = () => {
 
     <style jsx> 
     {`
-
+      nav{
+        background-color: var(--colorPrincipal);
+      }
     `}
     </style>
 

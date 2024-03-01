@@ -1,3 +1,5 @@
+"use client"
+
 import { useState } from 'react';
 import styles from "../styles/Home.module.css";
 
@@ -12,6 +14,16 @@ const Formulario = () => {
         e.preventDefault();
         console.log(formData);
     };
+
+    const handleChange = (e) => {
+        setFormData(form =>{
+            return {
+                ...form,
+                [e.target.name]: e.target.value
+            }
+        })
+        
+    }
     return (
         <form onSubmit={handleSubmit}>
             <div>
@@ -34,5 +46,52 @@ const Formulario = () => {
         </form>
     )
 }
-
+<styles jsx>
+ .form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 5px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  </styles>
+  
 export default Formulario
