@@ -1,5 +1,5 @@
 import { jsx } from "react/jsx-runtime"
-
+import Formulario from "./Formulario"
 
 const Adoptar = () => {
   return (
