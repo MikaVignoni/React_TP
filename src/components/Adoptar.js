@@ -15,7 +15,6 @@ const Adoptar = () => {
     </div>
   )
 }
-
 <style jsx>
 .adopcion-container {
   max-width: 600px;
