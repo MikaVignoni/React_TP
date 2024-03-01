@@ -46,7 +46,7 @@ const Formulario = () => {
         </form>
     )
 }
-<styles jsx>
+<styles-jsx>
  .form-container {
     max-width: 400px;
     margin: 0 auto;
@@ -92,6 +92,6 @@ const Formulario = () => {
     background-color: #FEDD89;
   }
   
-  </styles>
+  </styles-jsx>
 
 export default Formulario
