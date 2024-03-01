@@ -12,26 +12,26 @@ const Adoptar = () => {
 
         <Formulario></Formulario>
 
+      <style jsx>{`
+        .adopcion-container {
+          max-width: 600px;
+          margin: 0 auto;
+          padding: 20px;
+        }
+
+        .adopcion-container h2 {
+          font-size: 24px;
+          margin-bottom: 10px;
+        }
+
+        .adopcion-container p {
+          font-size: 16px;
+          line-height: 1.5;
+          margin-bottom: 20px;
+        }
+      `}</style>
     </div>
   )
 }
-<style jsx>
-.adopcion-container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.adopcion-container h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.adopcion-container p {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-</style>
 
 export default Adoptar
