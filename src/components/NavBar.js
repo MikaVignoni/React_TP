@@ -5,26 +5,27 @@ const Navigation = () => {
     return (
         <nav>
             <ul>
-                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
-                <li><a href="#voluntarios">Voluntarios</a></li>
-                <li><a href="#adopcion">Adopción</a></li>
-                <li><a href="#tienda-solidaria">Tienda Solidaria</a></li>
+                <li><Link href="#sobre-nosotros">Sobre Nosotros</Link></li>
+                <li><Link href="#voluntarios">Voluntarios</Link></li>
+                <li><Link href="#adopcion">Adopción</Link></li>
+                <li><Link href="#tienda-solidaria">Tienda Solidaria</Link></li>
+            
             </ul>
-        </nav>
+       </nav>
     );
 }
 
-const NavBar = () => {
-    return (
-        <>
-            <Navigation />
-            <style jsx>{`
+function NavBar() {
+  return (
+    <>
+      <Navigation />
+      <style jsx>{`
                 nav {
                     background-color: var(--colorPrincipal);
                 }
             `}</style>
-        </>
-    );
+    </>
+  );
 }
 
 export default NavBar;
