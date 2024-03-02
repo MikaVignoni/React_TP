@@ -78,7 +78,7 @@ const Formulario = () => {
                     padding: 10px;
                     border: none;
                     border-radius: 5px;
-                    background-color: #4CAF50;
+                    background-color: var(--colorDetalles);
                     color: white;
                     font-weight: bold;
                     cursor: pointer;
