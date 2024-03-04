@@ -9,9 +9,9 @@ export default function Cart() {
 
       <ShoppingContextProvider>
 
-        <h2>Tienda</h2>
+        <h2>Carrito</h2>
 
-        <p>AAAAAAAA</p>
+        <p>tus</p>
 
         <CartItems/>
 
