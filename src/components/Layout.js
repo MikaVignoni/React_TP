@@ -24,8 +24,6 @@ export default function Layout({title,children}) {
       </main>
 
 
-
-
       <style jsx> {`
 
       `} </style>

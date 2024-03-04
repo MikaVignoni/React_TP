@@ -78,14 +78,14 @@ const Formulario = () => {
                     padding: 10px;
                     border: none;
                     border-radius: 5px;
-                    background-color: #4CAF50;
-                    color: white;
+                    background-color: var(--colorDetalles);
+                    color: black;
                     font-weight: bold;
                     cursor: pointer;
                 }
 
                 button[type="submit"]:hover {
-                    background-color: #45a049;
+                background-color: #DD8EA4;;
                 }
             `}</style>
         </div>
