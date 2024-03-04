@@ -18,9 +18,6 @@ const Adoptar = () => {
       max-width: 600px;
       margin: 0 auto;
       padding: 20px;
-    }
-
-    .h2 {
       font-size: 24px; 
     --colorPrincipal: #DD8EA4;
       text-align: center;
