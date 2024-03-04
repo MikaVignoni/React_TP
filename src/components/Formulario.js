@@ -85,7 +85,7 @@ const Formulario = () => {
                 }
 
                 button[type="submit"]:hover {
-                    background-color: #45a049;
+                background-color: #31383F;
                 }
             `}</style>
         </div>
