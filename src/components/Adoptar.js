@@ -39,7 +39,6 @@ const Adoptar = () => {
           margin-bottom: 20px;
         }
 
-
       `}</style>
     </div>
   )
