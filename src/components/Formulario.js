@@ -79,13 +79,13 @@ const Formulario = () => {
                     border: none;
                     border-radius: 5px;
                     background-color: var(--colorDetalles);
-                    color: white;
+                    color: black;
                     font-weight: bold;
                     cursor: pointer;
                 }
 
                 button[type="submit"]:hover {
-                background-color: #31383F;
+                background-color: #DD8EA4;;
                 }
             `}</style>
         </div>

@@ -23,12 +23,23 @@ const Adoptar = () => {
           font-size: 24px;
           margin-bottom: 10px;
         }
-
+       
+        h2.adopcion-titulo {
+          text-align: center;
+          --colorPrincipal: #DD8EA4; 
+      }
+        .texto-adoptar {
+          text-align: center;
+          font-family: 'Inter', sans-serif;
+          --colorTexto: #31383F;
+      }
         .adopcion-container p {
           font-size: 16px;
           line-height: 1.5;
           margin-bottom: 20px;
         }
+
+
       `}</style>
     </div>
   )
