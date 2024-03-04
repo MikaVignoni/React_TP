@@ -11,32 +11,31 @@ const Adoptar = () => {
         ¡Esperamos con ansias poder acompañarte en este emocionante viaje hacia la adopción de tu nueva mascota! </p>
 
         <Formulario></Formulario>
+       
+       
+ <style jsx>{`
+    .adopcion-container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
 
-      <style jsx>{`
-        .adopcion-container {
-          max-width: 600px;
-          margin: 0 auto;
-          padding: 20px;
-          h2.adopcion-titulo {
-          text-align: center;
-          --colorPrincipal: #DD8EA4; 
-        }
+    .adopcion-container h2.adopcion-titulo {
+      text-align: center;
+      color: #DD8EA4; 
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
 
-        .adopcion-container h2 {
-          font-size: 24px;
-          margin-bottom: 10px;
-      }
-        .adopcion-container p {
-          font-size: 16px;
-          line-height: 1.5;
-          margin-bottom: 20px;
-          .texto-adoptar {
-            text-align: center;
-            font-family: 'Inter', sans-serif;
-            --colorTexto: #31383F;
-        }
-
-      `}</style>
+    .adopcion-container p.texto-adoptar {
+      text-align: center;
+      font-family: 'Inter', sans-serif;
+      color: #31383F;
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+`}</style>
     </div>
   )
 }
