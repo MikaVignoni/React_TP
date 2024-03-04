@@ -20,11 +20,11 @@ const Adoptar = () => {
       padding: 20px;
     }
 
-    .adopcion-container h2.adopcion-titulo {
+    .h2 {
+      font-size: 24px; 
+    --colorPrincipal: #DD8EA4;
       text-align: center;
-      color: #DD8EA4; 
-      font-size: 24px;
-      margin-bottom: 10px;
+      
     }
 
     .adopcion-container p.texto-adoptar {
