@@ -18,11 +18,11 @@ const Navigation = () => {
        </nav>
     );
 }
-
 function NavBar() {
     return (
         <>
             <Navigation />
+           
             <style jsx>{`
                 nav {
                     background-color: var(--colorPrincipal);
