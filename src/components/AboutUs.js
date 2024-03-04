@@ -1,5 +1,3 @@
-import Adoptar from "./Adoptar"
-
 
 const AboutUs = () => {
   return (
