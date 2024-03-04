@@ -17,26 +17,23 @@ const Adoptar = () => {
           max-width: 600px;
           margin: 0 auto;
           padding: 20px;
+          h2.adopcion-titulo {
+          text-align: center;
+          --colorPrincipal: #DD8EA4; 
         }
 
         .adopcion-container h2 {
           font-size: 24px;
           margin-bottom: 10px;
-        }
-       
-        h2.adopcion-titulo {
-          text-align: center;
-          --colorPrincipal: #DD8EA4; 
-      }
-        .texto-adoptar {
-          text-align: center;
-          font-family: 'Inter', sans-serif;
-          --colorTexto: #31383F;
       }
         .adopcion-container p {
           font-size: 16px;
           line-height: 1.5;
           margin-bottom: 20px;
+          .texto-adoptar {
+            text-align: center;
+            font-family: 'Inter', sans-serif;
+            --colorTexto: #31383F;
         }
 
       `}</style>
