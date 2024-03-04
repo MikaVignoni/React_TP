@@ -30,24 +30,36 @@ h1{
     font-size: 32px;
     font-family: "Kurale", serif;
     font-style: normal;
+    padding-bottom: 12px;
+
 }
 
 h2{
     font-size: 28px;
     font-family: "Kurale", serif;
     font-style: normal;
+    padding-top: 20px;
+    padding-bottom: 10px;
+
 }
 
 h3{
     font-size: 22px;
     font-family: "Kurale", serif;
     font-style: normal;
+    padding-bottom: 10px;
+}
+
+
+h4 {
+    font-family: sans-serif;
 }
 
 p {
     font-family: "Inter", sans-serif;
     font-weight: 400; 
     font-size: 12px;
+    padding-bottom: 10px;
 }
 
 
@@ -69,3 +81,5 @@ ul{
 
 
 /* * * * * * *  FIN reset   * * * * * * */
+
+
