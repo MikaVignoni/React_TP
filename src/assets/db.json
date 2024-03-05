@@ -81,7 +81,7 @@
       "name": "Cama Dona",
       "description": "Corderito sintético y gabardina. \nApto lavarropas.\nTamaño: 90cm x 35cm",
       "price": 320,
-      "qty": 5
+      "qty": 2
     },
     {
       "id": "8",
@@ -92,29 +92,40 @@
       "name": "Casa para Gatos",
       "description": "Refugio suave para tu gato.\nExterior de gabardina.\nFondo antideslizante.",
       "price": 350,
+      "qty": 3
+    },
+    {
+      "id": "0",
+      "img": [
+        "/img/Shopping/Cama_Nido_1.png",
+        "/img/Shopping/Cama_Nido_2.png"
+      ],
+      "name": "Cama Nido",
+      "description": "Rellena de vellón siliconado. \nApto lavarropas.\nTamaño: 50cm x 25cm",
+      "price": 300,
       "qty": 1
     },
     {
-      "id": "6",
+      "id": "1",
       "img": [
-        "/img/Shopping/Plato_1.png",
-        "/img/Shopping/Plato_2.png"
+        "/img/Shopping/Collar_Rosa_1.png",
+        "/img/Shopping/Collar_Rosa_2.png"
       ],
-      "name": "Plato",
-      "description": "Platos cerámicos con relieve.\nCada plato se vende por separado\nFáciles de limpiar.",
-      "price": 150,
+      "name": "Collar Rosa",
+      "description": "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
+      "price": 30,
       "qty": 1
     },
     {
-      "id": "3",
+      "id": "2",
       "img": [
-        "/img/Shopping/Manta_Gris_1.png",
-        "/img/Shopping/Manta_Gris_2.png"
+        "/img/Shopping/Manta_Beige_1.png",
+        "/img/Shopping/Manta_Beige_2.png"
       ],
-      "name": "Manta Gris",
-      "description": "Corderito sintético y gabardina.\nApto lavarropas.\n100cm x 80cm",
+      "name": "Manta Beige",
+      "description": "Corderito sintético y gabardina.\nApto lavarropas.\n100cm x 80cm ",
       "price": 260,
-      "qty": 2
+      "qty": 1
     }
   ]
 }
