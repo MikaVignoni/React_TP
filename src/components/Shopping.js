@@ -4,14 +4,9 @@ import Card from "./Card";
 
 function Shopping() {
   
-  const {db, READ_DATA, ADD_ITEM_TO_CART, DELETE_ITEM_IN_CART} = useContext(ShoppingContext);
+  const {db, READ_DATA, ADD_ITEM_TO_CART} = useContext(ShoppingContext);
   useEffect(() => {READ_DATA()}, []);
   const {products, cart} = db; 
-
-  console.log(products)
-
-
-
 
   return (
     <>
@@ -22,7 +17,6 @@ function Shopping() {
     
 
       <style jsx>{`
-        /* * * * * * *   CUSTOM PROPERTIES   * * * * * * */
         .cards_container {
           display: flex;
           flex-flow: row;

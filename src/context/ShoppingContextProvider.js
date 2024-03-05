@@ -22,26 +22,14 @@ const initialDb = {
       ],
       name: "Collar Rosa",
       price: 3000
-    },
-    {
-      id: "2",
-      img: [
-        "/img/Shopping/Manta_Beige_1.png",
-        "/img/Shopping/Manta_Beige_2.png"
-      ],
-      name: "Manta Beige",
-      price: 26000
-    },
-    {
-      id: "3",
-      img: [
-        "/img/Shopping/Manta_Gris_1.png",
-        "/img/Shopping/Manta_Gris_2.png"
-      ],
-      name: "Manta Gris",
-      price: 26000
     }
-  ]
+  ],
+  cart: [{
+    id: "000",
+    img: ["/img/Shopping/Cama_Nido_1.png"],
+    name: "TEST CART",
+    price: 333
+  }]
 };
 
 const ENDPOINTS = {

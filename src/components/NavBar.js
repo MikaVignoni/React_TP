@@ -24,6 +24,12 @@ const NavBar = () => {
           </Link>
         </li> 
 
+        <li> 
+          <Link href="/cart" legacyBehavior>
+            <a> Carrito de Compras </a> 
+          </Link>
+        </li> 
+
       </ul>
 
     </nav>

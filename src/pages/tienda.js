@@ -1,6 +1,7 @@
 import Shopping from "../components/Shopping";
 import Layout from "../components/Layout";
 import ShoppingContextProvider from "../context/ShoppingContextProvider"
+import CartList from "@/components/CartList";
 
 export default function Tienda() {
   return (
@@ -16,6 +17,7 @@ export default function Tienda() {
         <p>Haz que cada compra cuente. ¡Gracias por tu apoyo incondicional para darles una segunda oportunidad a nuestros amigos peluditos! </p>
 
         <Shopping />
+
 
       </ShoppingContextProvider>
 
