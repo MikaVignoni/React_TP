@@ -14,7 +14,7 @@ export default function Layout({title,children}) {
       </Head>
       
       <main>
-
+        
         <NavBar />
         <div className="Page-Content">
           {children}
@@ -25,9 +25,12 @@ export default function Layout({title,children}) {
 
 
       <style jsx> {`
+        .Page-Content{
+          max-width: 1200px;
+          margin: 0 auto;
+        }
 
       `} </style>
-
 
 
     </>
