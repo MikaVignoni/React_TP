@@ -14,7 +14,6 @@ function Shopping() {
         {products.map( (product, index) => <Card key={index} product={product} ADD_ITEM_TO_CART={ADD_ITEM_TO_CART} />) 
         }
       </div>
-    
 
       <style jsx>{`
         .cards_container {
@@ -24,7 +23,6 @@ function Shopping() {
           align-items: center;
           flex-wrap: wrap;
         }
-
       `}</style>
     </>
   )

@@ -1,9 +1,9 @@
+
+
 function Card(props) {
-
   const {product, ADD_ITEM_TO_CART} = props;
-
-
-  const handleButtonClick = () => {
+  
+  const handleAddToCart = () => {
     const isConfirmed = window.confirm(
       product.collected
         ? `You already have this card. 
@@ -13,7 +13,6 @@ function Card(props) {
 
     if (isConfirmed) { ADD_ITEM_TO_CART(product.id); }
   };
-  
 
   return (
     <>
@@ -28,11 +27,12 @@ function Card(props) {
 
           <h4>$ {product.price}</h4>
 
-          <button onClick={handleButtonClick}>
+          <button onClick={handleAddToCart}>
             Añadir al Carrito
           </button>
 
         </figure>
+
 
         <style jsx>{`
 

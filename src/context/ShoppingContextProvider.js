@@ -105,8 +105,8 @@ const ShoppingContextProvider = (props) => {
     const itemToDelete = db.cart.find(item => item.id === idSelected)
     if (!itemToDelete) { console.log("Error - Card Selected Doesn't Exist")}
     else {
-      id = itemToDelete.id;
-
+      let id = itemToDelete.id;
+      
       const OPTIONS = {
         method: "DELETE",
         headers: { "Content-Type" : "application/json" },

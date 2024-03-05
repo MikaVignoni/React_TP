@@ -10,8 +10,6 @@ function Shopping() {
 
   return (
     <>
-
-      <h2>CARRITO DE COMPRAS</h2>
       <div >
         <table className="table">
         <thead>
@@ -26,12 +24,11 @@ function Shopping() {
         </thead>
         <tbody>
             {cart.map( (item, index) =>
-              <CartItem key={index} item={item} DELETE_ITEM_IN_CART={DELETE_ITEM_IN_CART} ADD_ITEM_TO_CART={ADD_ITEM_TO_CART} /> 
+              <CartItem key={index} item={item} DELETE_ITEM_IN_CART={DELETE_ITEM_IN_CART} ADD_ITEM_TO_CART={ADD_ITEM_TO_CART} DELETE_ONE_ITEM_IN_CART={DELETE_ONE_ITEM_IN_CART} /> 
             )}
 
         </tbody>
         </table>
-        {/* )} */}
       </div>
 
 

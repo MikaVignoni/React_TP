@@ -5,7 +5,6 @@ const NavBar = () => {
   return ( <>
     <nav>
       <ul>
-
         <li> 
           <Link href="/" legacyBehavior>
             <a>  INICIO </a> 
