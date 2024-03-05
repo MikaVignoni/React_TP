@@ -73,8 +73,6 @@ const ShoppingContextProvider = (props) => {
     READ_DATA();
   } ;
 
-
-
   const UPDATE_ITEM_IN_CART = async (itemIsInCart) => {
     let id = itemIsInCart.id;
     itemIsInCart.qty = itemIsInCart.qty + 1;
@@ -91,8 +89,6 @@ const ShoppingContextProvider = (props) => {
 
     READ_DATA();
   } ;
-
-
 
   const ADD_ITEM_TO_CART = async (idSelected) => {
     const item = db.products.find(product => product.id === idSelected);
@@ -123,7 +119,29 @@ const ShoppingContextProvider = (props) => {
     READ_DATA();
   };
 
-  const value = {db, READ_DATA, ADD_ITEM_TO_CART, DELETE_ITEM_IN_CART};
+
+  const DELETE_ONE_ITEM_IN_CART = async (idSelected) => {
+    const itemToDelete = db.cart.find(item => item.id === idSelected)
+    if (!itemToDelete) { console.log("Error - Card Selected Doesn't Exist")}
+    else {
+      let id = itemToDelete.id;
+      itemToDelete.qty = itemToDelete.qty - 1;
+      
+      const OPTIONS = {
+        method: "PUT",
+        headers: { "Content-Type" : "application/json" },
+        data: JSON.stringify(itemToDelete) 
+      }
+
+      const ENDPOINT = `${ENDPOINTS.cart}/${id}`
+      await axios(ENDPOINT , OPTIONS);
+    };
+
+    READ_DATA();
+  };
+
+
+  const value = {db, READ_DATA, ADD_ITEM_TO_CART, DELETE_ITEM_IN_CART, DELETE_ONE_ITEM_IN_CART};
 
 
 

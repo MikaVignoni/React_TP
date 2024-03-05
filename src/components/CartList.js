@@ -1,17 +1,12 @@
 import { ShoppingContext } from "../context/ShoppingContextProvider"
 import { useContext, useEffect } from "react";
+import CartItem from "./CartItem";
 
 function Shopping() {
   
-  const {db, READ_DATA, DELETE_ITEM_IN_CART} = useContext(ShoppingContext);
+  const {db, READ_DATA, DELETE_ITEM_IN_CART, ADD_ITEM_TO_CART, DELETE_ONE_ITEM_IN_CART} = useContext(ShoppingContext);
   useEffect(() => {READ_DATA()}, []);
-  const {products, cart} = db; 
-
-  console.log(products)
-  console.log(cart)
-
-
-
+  const {cart} = db; 
 
   return (
     <>
@@ -30,17 +25,10 @@ function Shopping() {
             </tr>
         </thead>
         <tbody>
-            {cart.map( (item, index) => 
-                <tr key={index}>
-                    <th scope="row">
-                        <img  key= {item.id} src={item.img[0]} width="50px" alt={item.name} />
-                    </th>
-                    <td>{item.name}</td>
-                    <td>{item.price}</td>
-                    <td>{item.qty}</td>
-                    <td> {parseInt(item.price, 10)*parseInt(item.qty, 10)}</td>
-                </tr>) 
-            }
+            {cart.map( (item, index) =>
+              <CartItem key={index} item={item} DELETE_ITEM_IN_CART={DELETE_ITEM_IN_CART} ADD_ITEM_TO_CART={ADD_ITEM_TO_CART} /> 
+            )}
+
         </tbody>
         </table>
         {/* )} */}

@@ -1,11 +1,11 @@
+import Trash from "./icons/Trash";
 
 
-function CartItems(props) {
-
-    const {product, ADD_ITEM_TO_CART} = props;
+function CartItem(props) {
+  const {item,DELETE_ITEM_IN_CART, ADD_ITEM_TO_CART, DELETE_ONE_ITEM_IN_CART} = props;
   
   
-    const handleButtonClick = () => {
+    const handleAddOne = () => {
       const isConfirmed = window.confirm(
         product.collected
           ? `You already have this card. 
@@ -15,25 +15,85 @@ function CartItems(props) {
   
       if (isConfirmed) { ADD_ITEM_TO_CART(product.id); }
     };
+
+    const handleDeleteOne = () => {
+      const isConfirmed = window.confirm(
+        product.collected
+          ? `You already have this card. 
+          Do you want to buy it again?`
+          : `Do you want to buy this card?`
+      );
+  
+      if (isConfirmed) { ADD_ITEM_TO_CART(product.id); }
+    };
+
+    const handleDeleteAll = () => {
+      const isConfirmed = window.confirm(
+        product.collected
+          ? `You already have this card. 
+          Do you want to buy it again?`
+          : `Do you want to buy this card?`
+      );
+  
+      if (isConfirmed) { ADD_ITEM_TO_CART(product.id); }
+    };
+
     
   
     return (
       <>
-          <figure>
-            <img  key= {product.id} src={product.img[0]} alt={product.name} />
-            
-            <figcaption>
-              <h3> {product.name} </h3>
-              <p>{product.price}</p>
-              <button onClick={handleButtonClick}>
-                Añadir al Carrito
-              </button>          
-            </figcaption>
-          
-          </figure>
-  
+        <tr>
+            <th scope="row">
+                <img src={item.img[0]} alt={item.name} />
+            </th>
+            <td>{item.name}</td>
+            <td>{item.price}</td>
+            <td>
+              <button onClick={handleDeleteOne}>-</button>
+              {item.qty}
+              <button onClick={handleAddOne}>+</button>
+            </td>
+            <td> {parseInt(item.price, 10)*parseInt(item.qty, 10)}</td>
+            <td>
+              <button onClick={handleDeleteAll} className="TrashIcon"><Trash/> </button>
+            </td>
+        </tr>
+
+
+
           <style jsx>{`
             /* * * * * * *   CUSTOM PROPERTIES   * * * * * * */
+            .TrashIcon{
+              width: 45px;
+              height: 45px;
+              align-items: center;
+              justify-content: center;
+              transition: 0.1s box-shadow ease-in-out;
+              cursor: pointer;
+              font-weight: 600;
+  
+              box-shadow: none;
+              border: none;
+
+              color: var(--colorTexto);
+              font-size: 14px;
+              width: 30px;
+              height: 30px;
+              margin: 0px 10px;
+              background: none;
+            }
+
+            .TrashIcon:active{
+              box-shadow: none;
+              opacity: 1;
+              font-size: 10px;
+              color: var(--colorTexto);
+            }
+
+            .TrashIcon:hover {
+              color: var(--colorPrincipal);
+            }
+
             figure {
               width: 250px; 
               height: 440px;
@@ -51,8 +111,7 @@ function CartItems(props) {
             }
   
             img {
-              width: 80%;
-              height: 45%;
+              width: 80px;
               object-fit: cover;
               margin-top: 20px;
               margin-bottom: 30px;
@@ -72,35 +131,32 @@ function CartItems(props) {
               justify-content: center;
               transition: 0.1s box-shadow ease-in-out;
               cursor: pointer;
-              border-radius: 10px;
-              font-weight: normal;
+              border-radius: 5px;
+              font-weight: 600;
   
-              box-shadow: -8px -8px 20px 0px #fff9, -6px -6px 6px 0px #fff9,
-                8px 8px 20px 0px #0001, 5px 5px 6px 0px #0001, inset 0px 0px 0px 0px #fff9,
-                inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9,
-                inset 0px 0px 0px 0px #0001;
+              box-shadow: -2px -2px 2px 0px #fff9, -2px -2px 2px 0px #fff9, 2px 2px 2px 0px #0001, 2px 2px 2px 0px #0001;
               border: none;
   
-              color: #a5b1c6;
+              color: var(--colorTexto);
               opacity: 0.8;
-              font-size: 18px;
-              padding: 10px 20px;
+              font-size: 14px;
+              width: 30px;
+              height: 30px;
+              margin: 0px 10px;
             }
   
             button:hover {
-              transform: translateY(2px);
-              box-shadow: none;
-              
+              transform: translateY(1px);
+              box-shadow: none; 
             }
   
             button:active{
-              box-shadow: 0px 0px 0px 0px #fff9, 0px 0px 0px 0px #fff9,
-              0px 0px 0px 0px #0001, 0px 0px 0px 0px #0001, inset -8px -8px 20px 0px #fff9,
-              inset -5px -5px 6px 0px #fff9, inset 8px 8px 20px 0px #0003,
-              inset 5px 5px 6px 0px #0001;
+              box-shadow:inset -2px -2px 3px 0px #fff9,
+              inset -2px -2px 3px 0px #fff9, inset 2px 2px 3px 0px #0003,
+              inset 2px 2px 3px 0px #0001;
               color: #a5b1c6;
               opacity: 1;
-              font-size: 15px;
+              font-size: 10px;
             }
             /* Extra small devices (phones, 600px and down) */
             @media only screen and (max-width: 600px) {
@@ -144,4 +200,4 @@ function CartItems(props) {
     )
   }
   
-  export default CartItems
+  export default CartItem
