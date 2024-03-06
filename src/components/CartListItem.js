@@ -26,7 +26,7 @@ function CartListItem(props) {
     <li> 
         <img src={item.img[0]} alt={item.name} />
         
-        <div>
+        <div className="Name-Qty">
             <span className="ProductName"> {item.name} </span>
             <div className="Qty">
                 <button onClick={handleDeleteOne}>-</button>
@@ -35,9 +35,9 @@ function CartListItem(props) {
             </div>
         </div>
 
-        <span className="ItemPrice">$ {item.price}</span>
+        <span className="ItemPrice">${item.price}</span>
         
-        <span className="SubTotalPrice">$ {parseInt(item.price, 10)*parseInt(item.qty, 10)}</span>
+        <span className="SubTotalPrice">${parseInt(item.price, 10)*parseInt(item.qty, 10)}</span>
 
         <button onClick={handleDeleteAll} className="TrashIcon">
             <Trash />
@@ -50,6 +50,7 @@ function CartListItem(props) {
 
 
     <style jsx>{`
+        .Name-Qty{display: flex; flex-direction: row;}
         li{
             width: 100%;
             display: flex;
@@ -65,13 +66,13 @@ function CartListItem(props) {
         .ItemQty{ padding: 0px 5px; }
 
         .ProductName{
-            width: 30%; /* En el Responsive puede bajar a 25% y darle 5% a Amount */
+            width: 30vw; /* En el Responsive puede bajar a 25% y darle 5% a Amount */
             text-align: left;
             padding-left: 20px;
         }
 
         .ItemPrice,
-        .SubTotalPrice{ width: 10%; }
+        .SubTotalPrice{ width: 10vw; text-align:center;}
 
         img {
             max-height: 90px;
@@ -113,8 +114,8 @@ function CartListItem(props) {
 
 
         .TrashIcon{
-            width: 40px;
-            height: 40px;
+            width: 25px;
+            height: 25px;
             align-items: center;
             justify-content: center;
             transition: 0.1s box-shadow ease-in-out;
@@ -123,7 +124,7 @@ function CartListItem(props) {
             box-shadow: none;
             border: none;
 
-            margin: 0px 20px;
+            margin: 0px 5px;
             background: none;
         }
 
@@ -140,20 +141,30 @@ function CartListItem(props) {
 
         /* Extra small devices (phones, 600px and down) */
         @media only screen and (max-width: 600px) {
-            .ItemPrice {visibility: hidden;}
+            li{margin: 20px 0px; justify-content: space-between;}
+            .ItemPrice {visibility: hidden; display: none;}
+            .ItemQty{padding: 0px 10px;}
+            .Name-Qty{display: flex; flex-direction: column; width:40vw; align-items: center; justify-content: center;}
             img{
                 width: 15%;
-                max-width: 82px;
+                max-width: 55px;
+                margin: 0px;
             }
-
             
             .Qty{
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
+                margin: 5px 0px;
             }
 
+            .ProductName{
+                text-align: center;
+                font-size: 14px;
+                padding: 0px;
+                margin: 0px;
+            }
 
             h3 {
                 font-size: 1.4rem;
@@ -167,15 +178,22 @@ function CartListItem(props) {
 
 
             button{
-                align-items: center;
-                justify-content: center;
-                transition: 0.1s box-shadow ease-in-out;
-                border-radius: 10px;
-
-                color: #a5b1c6;
                 font-size: 12px;
-                padding: 5px 5px;
+                padding: 0px;
+                margin: 0px;
             }
+
+
+            .TrashIcon{
+                width: 20px;
+                height: 20px;
+                margin: 0px 5px;
+            }
+
+
+            .TrashIcon:active{color: var(--colorTexto);}
+            .TrashIcon:hover {color: var(--colorTexto); }
+
 
         }
     `}</style>

@@ -12,7 +12,7 @@ function YourCart() {
 
   return (
     <>
-        <ul className="table table-hover  align-middle text-center">
+        <ul>
             {cart.map( (item, index) => 
                 <CartListItem key={index} item={item} DELETE_ITEM_IN_CART={DELETE_ITEM_IN_CART} ADD_ITEM_TO_CART={ADD_ITEM_TO_CART} DELETE_ONE_ITEM_IN_CART={DELETE_ONE_ITEM_IN_CART} /> 
             )}
@@ -28,7 +28,7 @@ function YourCart() {
             width: 100%;
             padding: 0px;
         }
-        
+
         span{
           font-weight: 600;
         }
