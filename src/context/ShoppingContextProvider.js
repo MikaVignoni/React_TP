@@ -32,6 +32,9 @@ const initialDb = {
   }]
 };
 
+const ItemsInCart = 0;
+const TotalCartPrice = 0;
+
 const ENDPOINTS = {
     products: `http://localhost:5000/products`,
     cart: `http://localhost:5000/cart`
@@ -71,7 +74,7 @@ const ShoppingContextProvider = (props) => {
     await axios(ENDPOINT, OPTIONS);
 
     READ_DATA();
-  } ;
+  };
 
   const UPDATE_ITEM_IN_CART = async (itemIsInCart) => {
     let id = itemIsInCart.id;
@@ -88,7 +91,7 @@ const ShoppingContextProvider = (props) => {
     await axios(ENDPOINT , OPTIONS);
 
     READ_DATA();
-  } ;
+  };
 
   const ADD_ITEM_TO_CART = async (idSelected) => {
     const item = db.products.find(product => product.id === idSelected);
@@ -140,11 +143,7 @@ const ShoppingContextProvider = (props) => {
     READ_DATA();
   };
 
-
-  const value = {db, READ_DATA, ADD_ITEM_TO_CART, DELETE_ITEM_IN_CART, DELETE_ONE_ITEM_IN_CART};
-
-
-
+  const value = {db, READ_DATA, ADD_ITEM_TO_CART, DELETE_ITEM_IN_CART, DELETE_ONE_ITEM_IN_CART, ItemsInCart, TotalCartPrice};
 
   return (
     <ShoppingContext.Provider value = {value} >

@@ -20,6 +20,7 @@ function CartItem(props) {
     const isConfirmed = window.confirm(  `Quieres eliminar el item del carrito?` );
     if (isConfirmed) { DELETE_ITEM_IN_CART(item.id); }
   };
+  
 
   
 
@@ -31,46 +32,28 @@ function CartItem(props) {
 
       <td>{item.name}</td>
 
-      <td>{item.price}</td>
-
       <td>
         <button onClick={handleDeleteOne}>-</button>
         {item.qty}
         <button onClick={handleAddOne}>+</button>
       </td>
 
+      <td>{item.price}</td>
+
       <td> {parseInt(item.price, 10)*parseInt(item.qty, 10)}</td>
 
       <td>
-        <button onClick={handleDeleteAll} className="TrashIcon"><Trash/> </button>
+        <button onClick={handleDeleteAll} className="TrashIcon"> <Trash/> </button>
       </td>
 
     </tr>
 
     <style jsx>{`
-      figure {
-        width: 250px; 
-        height: 440px;
-        border: none;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: 15px;
-        text-decoration: none;
-        letter-spacing: 0.3px;   
-        font-weight: normal;
-        border-radius: 10px;
-        box-shadow: 8px 8px 16px rgba(165, 177, 198, 0.8), -8px -8px 16px rgba(255, 255, 255, 0.8); /* (165, 177, 198, 0.7)     rgba(255, 255, 255, 0.99);  celestito rgba(230, 243, 255, 0.9)*/ 
-        text-align: center;
-      }
-
       img {
         width: 80px;
         object-fit: cover;
-        margin-top: 20px;
-        margin-bottom: 30px;
+        margin: 5px 0px;
         border-radius: 10px;
-        transition: transform 0.2s ease-out;
       }
 
       h3 {
@@ -104,9 +87,7 @@ function CartItem(props) {
       }
 
       button:active{
-        box-shadow:inset -2px -2px 3px 0px #fff9,
-        inset -2px -2px 3px 0px #fff9, inset 2px 2px 3px 0px #0003,
-        inset 2px 2px 3px 0px #0001;
+        box-shadow:inset -2px -2px 3px 0px #fff9, inset -2px -2px 3px 0px #fff9, inset 2px 2px 3px 0px #0003, inset 2px 2px 3px 0px #0001;
         color: #a5b1c6;
         opacity: 1;
         font-size: 10px;
@@ -139,7 +120,7 @@ function CartItem(props) {
         color: var(--colorTexto);
       }
 
-      .TrashIcon:hover {color: var(--colorPrincipal); }
+      .TrashIcon:hover {color: red; }
 
       /* Extra small devices (phones, 600px and down) */
       @media only screen and (max-width: 600px) {
@@ -164,10 +145,7 @@ function CartItem(props) {
         border-radius: 10px;
         font-weight: normal;
 
-        box-shadow: -8px -8px 20px 0px #fff9, -6px -6px 6px 0px #fff9,
-          8px 8px 20px 0px #0001, 5px 5px 6px 0px #0001, inset 0px 0px 0px 0px #fff9,
-          inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9,
-          inset 0px 0px 0px 0px #0001;
+        box-shadow: -8px -8px 20px 0px #fff9, -6px -6px 6px 0px #fff9, 8px 8px 20px 0px #0001, 5px 5px 6px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001;
         border: none;
 
         color: #a5b1c6;

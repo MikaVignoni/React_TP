@@ -16,18 +16,31 @@ export default function Layout({title,children}) {
       <main>
         
         <NavBar />
+        
         <div className="Page-Content">
           {children}
         </div>
-        <Footer />
 
       </main>
+      
+      <Footer className="Footer" />
 
 
       <style jsx> {`
+        main{
+          position: relative;
+          min-height: 90vh;
+        }
+
         .Page-Content{
-          max-width: 1200px;
+          max-width: 1000px;
           margin: 0 auto;
+        }
+
+        .Footer {
+          position: fixed;
+          bottom: 0px;
+          width: 100%;
         }
 
       `} </style>

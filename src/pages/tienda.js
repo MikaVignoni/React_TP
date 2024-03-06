@@ -24,6 +24,9 @@ export default function Tienda() {
     </Layout>
 
     <style jsx> {`
+      h2{
+        color: var(--colorPrincipal);
+      }
     `} </style>
 
   </>

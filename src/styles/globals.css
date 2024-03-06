@@ -31,7 +31,7 @@ h1{
     font-family: "Kurale", serif;
     font-style: normal;
     padding-bottom: 12px;
-
+    color:var(--colorPrincipal);
 }
 
 h2{
@@ -40,8 +40,8 @@ h2{
     font-style: normal;
     padding-top: 20px;
     padding-bottom: 10px;
-
-}
+    color:var(--colorPrincipal);
+ }
 
 h3{
     font-size: 22px;

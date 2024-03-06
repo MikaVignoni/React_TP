@@ -41,7 +41,7 @@ function Card(props) {
           figure {
             width: 300px;
             height: 400px;
-            border: none;
+            border: none; /* 2px solid var(--border); */
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -51,7 +51,7 @@ function Card(props) {
             letter-spacing: 0.3px;
             font-weight: normal;
             border-radius: 10px;
-            box-shadow: 3px 3px 6px rgba(165, 177, 198, 0.4), -3px -3px 6px rgba(255, 255, 255, 0.8); 
+            box-shadow: 3px 3px 6px  rgba(165, 177, 198, 0.5), -1px -1px 2px rgba(49, 56, 63, 0.06);
             text-align: center;
             margin: 30px 10px;
           }
@@ -99,7 +99,7 @@ function Card(props) {
             border: none;
             color: #a5b1c6;
             opacity: 0.8;
-            font-size: 18px;
+            font-size: 16px;
             padding: 10px 20px;
             margin-bottom: 20px;
           }
