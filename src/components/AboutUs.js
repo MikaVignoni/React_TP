@@ -52,6 +52,7 @@ Gracias por visitar Huellitas y por ser parte de nuestro viaje para hacer del mu
           text-align: justify;
           padding: 10px 20px;
 
+    
         }
       `}</style>
 </div>

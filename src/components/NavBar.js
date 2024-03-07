@@ -48,6 +48,7 @@ const NavBar = () => {
           color: black;
           font-weight: bold
         }
+        
 
         .logo img {
           height: 60px; 
@@ -76,11 +77,12 @@ const NavBar = () => {
           font-size: 16px;
           padding: 10px;
         }
-
+        
         .cart {
           color: black;
-          font-size: 10px;
+          font-size: 10px;   
         }
+
       `}</style>
     </nav>
   );
