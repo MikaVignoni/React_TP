@@ -25,6 +25,8 @@ function CartListItem(props) {
   return ( <>
     <li> 
         <img src={item.img[0]} alt={item.name} />
+
+        <span className="ProductNameScreens"> {item.name} </span>
         
         <div className="Name-Qty">
             <span className="ProductName"> {item.name} </span>
@@ -35,9 +37,9 @@ function CartListItem(props) {
             </div>
         </div>
 
-        <span className="ItemPrice">${item.price}</span>
+        <span className="Price">${item.price}</span>
         
-        <span className="SubTotalPrice">${parseInt(item.price, 10)*parseInt(item.qty, 10)}</span>
+        <span className="SubTotalPrice" >${parseInt(item.price, 10)*parseInt(item.qty, 10)}</span>
 
         <button onClick={handleDeleteAll} className="TrashIcon">
             <Trash />
@@ -50,152 +52,65 @@ function CartListItem(props) {
 
 
     <style jsx>{`
-        .Name-Qty{display: flex; flex-direction: row;}
-        li{
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-        } 
 
-        img{
-            width: 20%;
-            max-width: 82px;
-        }
-        .ItemQty{ padding: 0px 5px; }
+        li{ width: 100%; display: flex; flex-direction: row; justify-content: space-between; align-items: center; margin: 20px 0px; }
 
-        .ProductName{
-            width: 30vw; /* En el Responsive puede bajar a 25% y darle 5% a Amount */
-            text-align: left;
-            padding-left: 20px;
-        }
+        img{width: 15%; max-width: 55px; object-fit: cover;  margin: 0px; border-radius: 10px; }
 
-        .ItemPrice,
-        .SubTotalPrice{ width: 10vw; text-align:center;}
+        .Price{ display: none; }
 
-        img {
-            max-height: 90px;
-            object-fit: cover;
-            margin: 5px 10px;
-            border-radius: 10px;
-        }
+        .Name-Qty{ width:40vw; display: flex; flex-direction: column; align-items: center;  justify-content: center;}
 
-        button{
-            align-items: center;
-            justify-content: center;
-            transition: 0.1s box-shadow ease-in-out;
-            cursor: pointer;
-            border-radius: 5px;
-            font-weight: 600;
+        .ProductName{width: 40vw; text-align: left;padding: 0px; text-align: center; font-size: 14px; margin: 0px;}
 
-            box-shadow: -2px -2px 2px 0px #fff9, -2px -2px 2px 0px #fff9, 2px 2px 2px 0px #0001, 2px 2px 2px 0px #0001;
-            border: none;
+        .Qty{display: flex; flex-direction: row; justify-content: center; align-items: center; margin: 5px 0px;}
 
-            color: var(--colorTexto);
-            font-size: 16px;
-            width: 30px;
-            height: 30px;
-            margin: 0px 10px;
-            padding: 0px;
+        .ItemQty{padding: 0px 5px; text-align: center;}
+
+        span{font-size: 12px;}
+
+        .SubTotalPrice{ width:10vw; min-width: 65px; text-align:center;}
+
+        .TrashIcon{width: 20px; height: 20px; margin: 0px 5px; background: none; box-shadow: none;}
+
+        button{ color: var(--colorTexto); font-size: 12px; width: 25px; height: 25px; opacity: 0.8; margin: 5px 5px 0px; padding: 0px; border-radius: 5px; }
+
+        .ProductNameScreens{display: none;}
+
+        @media (min-width: 650px) {
+            img{width: 20%; max-width: 82px;}
+            .Price{ display: inline; width:10vw; min-width: 65px; text-align:center;}
         }
 
-        button:hover {
-            transform: translateY(1px);
-            box-shadow: none; 
-        }
+        @media (min-width: 800px) {
+            img{width: 82px;}
+            span{font-size: 14px;}
+            .ProductNameScreens{ display:inline; width:250px; text-align: left; padding-left: 10px;}
+            .ProductName{display: none;}
+            .Name-Qty{width:100px; flex-direction: row; justify-content: center;}
+            .Qty{width:100px;}
 
-        button:active{
-            box-shadow:inset -2px -2px 3px 0px #fff9, inset -2px -2px 3px 0px #fff9, inset 2px 2px 3px 0px #0003, inset 2px 2px 3px 0px #0001;
-            color: #a5b1c6;
-            opacity: 1;
-            font-size: 10px;
-        }
+            button{font-size: 16px; width: 30px; height: 30px; margin: 0px 10px; }
+            button:hover {transform: translateY(1px); box-shadow: none; }
 
-
-        .TrashIcon{
-            width: 25px;
-            height: 25px;
-            align-items: center;
-            justify-content: center;
-            transition: 0.1s box-shadow ease-in-out;
-            cursor: pointer;
-
-            box-shadow: none;
-            border: none;
-
-            margin: 0px 5px;
-            background: none;
-        }
-
-        .TrashIcon:active{
-            box-shadow: none;
-            opacity: 1;
-            color: var(--colorPrincipal);
-        }
-
-        .TrashIcon:hover {color: var(--colorPrincipal); }
-
-
-        //* RESPONSIVE 700px o menos el tacho se achica a 35px y margin: 0px 5px*//
-
-        /* Extra small devices (phones, 600px and down) */
-        @media only screen and (max-width: 600px) {
-            li{margin: 20px 0px; justify-content: space-between;}
-            .ItemPrice {visibility: hidden; display: none;}
-            .ItemQty{padding: 0px 10px;}
-            .Name-Qty{display: flex; flex-direction: column; width:40vw; align-items: center; justify-content: center;}
-            img{
-                width: 15%;
-                max-width: 55px;
-                margin: 0px;
-            }
-            
-            .Qty{
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-                margin: 5px 0px;
-            }
-
-            .ProductName{
-                text-align: center;
-                font-size: 14px;
-                padding: 0px;
-                margin: 0px;
-            }
-
-            h3 {
-                font-size: 1.4rem;
-                font-weight: 900;
-                margin-bottom: 30px;
-            }
-
-            span{
+            button:active{
+                box-shadow:inset -2px -2px 3px 0px #fff9, inset -2px -2px 3px 0px #fff9, inset 2px 2px 3px 0px #0003, inset 2px 2px 3px 0px #0001;
+                color: #a5b1c6;
+                opacity: 1;
                 font-size: 12px;
             }
 
-
-            button{
-                font-size: 12px;
-                padding: 0px;
-                margin: 0px;
-            }
-
-
-            .TrashIcon{
-                width: 20px;
-                height: 20px;
-                margin: 0px 5px;
-            }
-
-
-            .TrashIcon:active{color: var(--colorTexto);}
-            .TrashIcon:hover {color: var(--colorTexto); }
-
+            .TrashIcon{ width: 25px; height: 25px; }
+            .TrashIcon:active{box-shadow: none; opacity: 1; color: var(--colorPrincipal);}
+            .TrashIcon:hover{color: var(--colorPrincipal); opacity: 1;}
 
         }
+
+        @media (min-width: 950px) {
+
+        }
+
+
     `}</style>
 
     

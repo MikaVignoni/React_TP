@@ -83,3 +83,14 @@ ul{
 /* * * * * * *  FIN reset   * * * * * * */
 
 
+button{
+    align-items: center;
+    justify-content: center;
+    transition: 0.1s box-shadow ease-in-out;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 600;
+
+    box-shadow: -2px -2px 2px 0px #fff9, -2px -2px 2px 0px #fff9, 2px 2px 2px 0px #0001, 2px 2px 2px 0px #0001;
+    border: none;
+}
