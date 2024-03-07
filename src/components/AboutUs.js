@@ -1,7 +1,6 @@
 import React from "react"
 import Slider from "react-slick";
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import Carousel from "./CarouselAboutUs";
 
 
 const AboutUs = () => {
@@ -22,6 +21,7 @@ Gracias por visitar Huellitas y por ser parte de nuestro viaje para hacer del mu
 
 </p>
 
+<Carousel></Carousel>
 
 <style jsx>{`
         

@@ -29,27 +29,29 @@ const NavBar = () => {
               <img src="../img/Huella/Huellitas_Icon.png" alt="Logo"/>
               <img src="../img/Logotipo/Logotipo_huellitas_negro.png" alt="Logo" />
             </div>
+         
             <div className="cart">
-              <Link href="/cart" legacyBehavior>
-                <a><ShoppingCart /></a>
-              </Link>
+               <a href="/cart" legacyBehavior>
+                  <ShoppingCart />
+                </a>
             </div>
-      
       
       
       <style jsx>{`
         .navbar {
           background-color: var(--colorPrincipal);
-          height: 100px;
+          height: 120px;
           display: flex;
           align-items: center;
           justify-content: space-between;
           padding: 0 20px;
           color: black;
+          font-weight: bold
         }
 
         .logo img {
-          height: 40px; 
+          height: 60px; 
+          padding-right: 20px;
         }
 
         .navbar-list {
@@ -77,7 +79,7 @@ const NavBar = () => {
 
         .cart {
           color: black;
-          font-size: 16px;
+          font-size: 10px;
         }
       `}</style>
     </nav>
