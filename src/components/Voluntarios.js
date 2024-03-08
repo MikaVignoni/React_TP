@@ -30,7 +30,7 @@ const Voluntarios = () => {
           font-style: normal;
           padding-top: 20px;
           color: var(--colorPrincipal);
-          padding: 20px 20px;
+          padding: 10px 20px;
           text-align: center;
         }
         h3{
