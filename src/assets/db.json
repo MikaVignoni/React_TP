@@ -92,18 +92,7 @@
       "name": "Casa para Gatos",
       "description": "Refugio suave para tu gato.\nExterior de gabardina.\nFondo antideslizante.",
       "price": 350,
-      "qty": 3
-    },
-    {
-      "id": "2",
-      "img": [
-        "/img/Shopping/Manta_Beige_1.png",
-        "/img/Shopping/Manta_Beige_2.png"
-      ],
-      "name": "Manta Beige",
-      "description": "Corderito sintético y gabardina.\nApto lavarropas.\n100cm x 80cm ",
-      "price": 260,
-      "qty": 1
+      "qty": 2
     }
   ]
 }
