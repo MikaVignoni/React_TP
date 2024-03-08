@@ -93,6 +93,17 @@
       "description": "Rellena de vellón siliconado. \nApto lavarropas.\nTamaño: 50cm x 25cm",
       "price": 300,
       "qty": 1
+    },
+    {
+      "id": "1",
+      "img": [
+        "/img/Shopping/Collar_Rosa_1.png",
+        "/img/Shopping/Collar_Rosa_2.png"
+      ],
+      "name": "Collar Rosa",
+      "description": "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
+      "price": 30,
+      "qty": 1
     }
   ]
 }
