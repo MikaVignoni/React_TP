@@ -55,7 +55,7 @@ const NavBar = () => {
           display: flex;
           align-items: center;
           justify-content: space-between;
-          padding:0px 20px ;
+          padding:0px;
           color: black;
           font-weight: bold;
         }
@@ -67,18 +67,18 @@ const NavBar = () => {
 
         .navbar-list {
           list-style-type: none;
-          padding: 50px;
+          padding: 30px;
           margin: 60px 0px;
           display: flex;
-          display: none;
-          flex-direction: horizontal;  
+          display: none;  
           position: absolute;
           top: 60px; 
           background-color:var(--colorPrincipal); 
           z-index: 1000; 
           transition: transform 0.3s ease-in-out; 
           transform: translateY(-100%);
-          text-align: center;
+          text-align: left;
+          flex-direction: column;
 
         }
 
@@ -105,6 +105,7 @@ const NavBar = () => {
 
         .menu-toggle {
         cursor: pointer;
+        padding: 0px 20px;
         }
 
         .bar {
@@ -135,7 +136,8 @@ const NavBar = () => {
 
         .cart {
           color: black;
-          font-size: 10px;   
+          font-size: 10px;
+          padding: 0px 20px;   
         }
       `}</style>
     </nav>
