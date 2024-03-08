@@ -2,7 +2,6 @@
 import Link from 'next/link';
 import React, { useState } from 'react';
 import ShoppingCart from './icons/ShoppingCart';
-import Logotipo_huellitas_negro from '/Users/violetazalazarmontori/Desktop/React_TP/public/img/Logotipo/Logotipo_huellitas_negro.png';
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -27,7 +26,7 @@ const NavBar = () => {
         </li>
         <li>
           <Link href="/about_us" legacyBehavior>
-            <a>About Us</a>
+            <a>Sobre Nosotros</a>
           </Link>
         </li>
         <li>
