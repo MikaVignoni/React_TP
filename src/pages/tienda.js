@@ -1,7 +1,6 @@
 import Shopping from "../components/Shopping";
 import Layout from "../components/Layout";
 import ShoppingContextProvider from "../context/ShoppingContextProvider"
-import CartList from "@/components/CartList";
 
 export default function Tienda() {
   return (

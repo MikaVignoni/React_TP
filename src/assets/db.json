@@ -73,17 +73,6 @@
   ],
   "cart": [
     {
-      "id": "7",
-      "img": [
-        "/img/Shopping/Cama_Dona_1.png",
-        "/img/Shopping/Cama_Dona_2.png"
-      ],
-      "name": "Cama Dona",
-      "description": "Corderito sintético y gabardina. \nApto lavarropas.\nTamaño: 90cm x 35cm",
-      "price": 320,
-      "qty": 6
-    },
-    {
       "id": "8",
       "img": [
         "/img/Shopping/Casa_Gato_1.png",
@@ -92,7 +81,18 @@
       "name": "Casa para Gatos",
       "description": "Refugio suave para tu gato.\nExterior de gabardina.\nFondo antideslizante.",
       "price": 350,
-      "qty": 2
+      "qty": 1
+    },
+    {
+      "id": "0",
+      "img": [
+        "/img/Shopping/Cama_Nido_1.png",
+        "/img/Shopping/Cama_Nido_2.png"
+      ],
+      "name": "Cama Nido",
+      "description": "Rellena de vellón siliconado. \nApto lavarropas.\nTamaño: 50cm x 25cm",
+      "price": 300,
+      "qty": 1
     }
   ]
 }

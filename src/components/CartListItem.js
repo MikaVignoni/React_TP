@@ -3,7 +3,6 @@ import Trash from "./icons/Trash";
 function CartListItem(props) {
   const {item,DELETE_ITEM_IN_CART, ADD_ITEM_TO_CART, DELETE_ONE_ITEM_IN_CART} = props;
   
-  
   const handleAddOne = () => ADD_ITEM_TO_CART(item.id);
 
   const handleDeleteOne = () => {

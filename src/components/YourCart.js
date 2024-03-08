@@ -11,7 +11,6 @@ function YourCart() {
   return ( <>
         <ul>
             <hr />
-
             <li>
                 <span className="Title-Img">-</span>
                 <span className="Title-Product">Producto</span>
@@ -20,7 +19,6 @@ function YourCart() {
                 <span className="Title-Subtotal">SubTotal</span>
                 <span className="Title-Delete">-</span>
             </li>
-
             <hr />
 
             {cart.map( (item, index) => 
@@ -41,7 +39,7 @@ function YourCart() {
             .Title-Qty {width:40vw;}
             .Title-Price {display: none;}
             .Title-Subtotal {width:10vw; min-width: 65px;}
-            .Title-Delete {width: 30px;}
+            .Title-Delete {width: 30px; visibility: hidden;}
 
             @media (min-width: 650px) {
                 .Title-Product {width: 20%; max-width: 82px;}
@@ -53,7 +51,7 @@ function YourCart() {
                 .Title-Img{width: 82px; display:inline; visibility: hidden;}
                 .Title-Product{min-width:250px; text-align: left; padding-left: 10px;}
                 .Title-Qty{width:100px; }
-                .Title-Delete{width: 35px; visibility: hidden;}
+                .Title-Delete{width: 35px; }
             }
       `}</style>
     
