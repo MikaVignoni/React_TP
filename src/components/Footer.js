@@ -9,10 +9,15 @@ import MapaPin from './icons/MapaPin';
 const Footer = () => {
   return ( 
   <>
-    <foot>
+    <footer>
       <div className="container">
         <div className='footer-links'>
-            // logotipo, anlinear a la derecha//        
+        <Link href="/" legacyBehavior>
+            <a>  
+              <img src="Huellitas_Icon.png" height="60px" title="huellita" style>
+              </img>
+            </a> 
+          </Link>       
         </div>
 
         <div className="footer-row">
@@ -46,13 +51,13 @@ const Footer = () => {
           <h4>La Plata, Argentina</h4> 
         </div>
       </div>
-    </foot>
+    </footer>
 
   
 
     <style jsx> 
     {`
-      foot{
+      footer{
         background-color: var(--colorPrincipal);
       }
     `}
