@@ -22,7 +22,7 @@ const NavBar = () => {
       <ul className={menuOpen ? "navbar-list open" : "navbar-list"}>
         <li>
           <Link href="/" legacyBehavior>
-            <a>INICIO</a>
+            <a>Inicio</a>
           </Link>
         </li>
         <li>
@@ -55,7 +55,7 @@ const NavBar = () => {
           display: flex;
           align-items: center;
           justify-content: space-between;
-          padding: 0 20px;
+          padding:0px 20px ;
           color: black;
           font-weight: bold;
         }
@@ -68,18 +68,17 @@ const NavBar = () => {
         .navbar-list {
           list-style-type: none;
           padding: 50px;
-          margin: 50px;
+          margin: 60px 0px;
           display: flex;
           display: none;
-          flex-direction: column;  
+          flex-direction: horizontal;  
           position: absolute;
           top: 60px; 
-          left: 20px; 
-          right: 20px;
           background-color:var(--colorPrincipal); 
           z-index: 1000; 
           transition: transform 0.3s ease-in-out; 
           transform: translateY(-100%);
+          text-align: center;
 
         }
 
@@ -101,6 +100,7 @@ const NavBar = () => {
           color: black;
           font-size: 16px;
           padding: 10px;
+
         }
 
         .menu-toggle {
@@ -116,11 +116,21 @@ const NavBar = () => {
 
         @media screen and (max-width: 600px) {
           .menu-toggle {
-            display: flex; /* Mostrar el botón de hamburguesa en pantallas pequeñas */
+            display: flex; 
             flex-direction: column;
             justify-content: space-between;
-            height: 20px; /* Ajustar el tamaño del botón */
+            height: 30px; 
           }
+          .logo img {
+            height: 40px; 
+            padding-right: 10px;
+          }
+  
+        .cart {
+          color: black;
+          font-size: 5px;   
+        }
+      
         }
 
         .cart {
