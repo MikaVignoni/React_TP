@@ -14,7 +14,7 @@ const Footer = () => {
         <div className='footer-links'>
         <Link href="/" legacyBehavior>
             <a>  
-              <img src="Huellitas_Icon.png" height="60px" title="huellita" style>
+              <img src="Huellitas_Icon.png" height="60px" title="huellita" >
               </img>
             </a> 
           </Link>       
