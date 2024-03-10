@@ -35,9 +35,6 @@ function Card(props) {
 
 
         <style jsx>{`
-
-
-          /* * * * * * *   CUSTOM PROPERTIES   * * * * * * */
           figure {
             width: 300px;
             height: 400px;

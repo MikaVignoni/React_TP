@@ -12,11 +12,9 @@ const Footer = () => {
     <footer>
       <div className="container">
         <div className='footer-links'>
-        <Link href="/" legacyBehavior>
-            <a>  
+        <Link href="/" >
               <img src="Huellitas_Icon.png" height="60px" title="huellita" >
               </img>
-            </a> 
           </Link>       
         </div>
 
@@ -26,27 +24,27 @@ const Footer = () => {
         <div className="footer-row">   
           <div className='footer-links'>
             <div className='social-links'>
-                <Link href="facebook.com" legacyBehavior>
-                  <a><Facebook/></a>
+                <Link href="facebook.com" >
+                  <Facebook/>
                 </Link>
-                <Link href="instagram.com" legacyBehavior>
-                  <a><Instagram/></a>
+                <Link href="instagram.com" >
+                  <Instagram/>
                 </Link>
-                <Link href="whatsapp" legacyBehavior>
-                  <a><Whatsapp/></a>
+                <Link href="whatsapp" >
+                  <Whatsapp/>
                 </Link>
               </div>        
           </div>
         </div>
         <div className="footer-row">
-        <Link href="mail" legacyBehavior>
-                  <a><Mail/></a>
+        <Link href="mail" >
+          <Mail/>
         </Link>
           <h4>huellitas@refugio.com</h4> 
         </div>
         <div className="footer-row">
-        <Link href="mapapin" legacyBehavior>
-                  <a><MapaPin/></a>
+        <Link href="mapapin" >
+            <MapaPin/>
         </Link>
           <h4>La Plata, Argentina</h4> 
         </div>

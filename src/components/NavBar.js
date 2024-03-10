@@ -1,6 +1,6 @@
 
 import Link from 'next/link';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import ShoppingCart from './icons/ShoppingCart';
 
 const NavBar = () => {
@@ -20,18 +20,18 @@ const NavBar = () => {
 
       <ul className={menuOpen ? "navbar-list open" : "navbar-list"}>
         <li>
-          <Link href="/" legacyBehavior>
-            <a>Inicio</a>
+          <Link href="/" >
+            Inicio
           </Link>
         </li>
         <li>
-          <Link href="/about_us" legacyBehavior>
-            <a>Sobre Nosotros</a>
+          <Link href="/about_us" >
+            Sobre Nosotros
           </Link>
         </li>
         <li>
-          <Link href="/tienda" legacyBehavior>
-            <a>Tienda Solidaria</a>
+          <Link href="/tienda" >
+            Tienda Solidaria
           </Link>
         </li>
       </ul>
@@ -42,7 +42,7 @@ const NavBar = () => {
       </div>
 
       <div className="cart">
-        <a href="/cart" legacyBehavior>
+        <a href="/cart" >
           <ShoppingCart />
         </a>
       </div>
