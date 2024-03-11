@@ -14,12 +14,9 @@ html {
     text-decoration: none;
     background-color: #FFFFFF;
     --colorBackground: #F6F5F5;
-    --colorPrincipal: #ff61a3;
     --colorDetalles: #FEDD89;
-    --colorTexto: #3196fb;
-/*  --colorTexto: #31383F;
+    --colorTexto: #31383F;
     --colorPrincipal: #DD8EA4;
- */
 
 }
 
@@ -82,7 +79,7 @@ a {
     padding: 10px;
 }
 
-/* p CHECKEADO!! */
+/* span CHECKEADO!! */
 span{
     color: var(--colorTexto);
     font-weight: 600;

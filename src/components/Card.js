@@ -37,7 +37,7 @@ function Card(props) {
         <style jsx>{`
           figure {
             width: 300px;
-            height: 400px;
+            height: 450px;
             border: none;
             display: flex;
             flex-direction: column;
@@ -79,7 +79,8 @@ function Card(props) {
             padding: 0px;
             text-align: center;
             white-space: pre-wrap;
-            height: 50px;
+            height: 60px;
+            font-size: 14px;
           }
 
           button{
