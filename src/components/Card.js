@@ -33,16 +33,16 @@ function Card(props) {
 
         </figure>
 
-
         <style jsx>{`
           figure {
-            width: 300px;
-            height: 450px;
+            width: 250px;
+            height: 400px;
             border: none;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
             font-size: 15px;
             text-decoration: none;
             letter-spacing: 0.3px;
@@ -50,7 +50,7 @@ function Card(props) {
             border-radius: 10px;
             box-shadow: 3px 3px 6px rgba(165, 177, 198, 0.4), -3px -3px 6px #ffffff /*rgba(255, 255, 255, 0.8)*/; 
             text-align: center;
-            margin: 30px 10px;
+            margin: 15px 0px;
             background:  #FFFFFF ;
           }
 
@@ -58,11 +58,13 @@ function Card(props) {
             color: var(--colorPrincipal);
           }
 
+
           img {
-            width: 280px;
+            width: 90%; 
             height: 45%;
             object-fit: cover;
             margin-top: 10px;
+            margin-bottom: 10px;
             border-radius: 10px;
             transition: transform 0.2s ease-out;
           }
@@ -75,11 +77,11 @@ function Card(props) {
           }
 
           p{
-            margin-bottom: 5px;
+            margin-bottom: 0px;
             padding: 0px;
             text-align: center;
             white-space: pre-wrap;
-            height: 60px;
+            height: 55px;
             font-size: 14px;
           }
 
@@ -97,7 +99,7 @@ function Card(props) {
             border: none;
             color: var(--colorTexto);
             opacity: 0.5;
-            font-size: 18px;
+            font-size: 16px;
             padding: 10px 20px;
             margin-bottom: 20px;
           }
@@ -116,31 +118,16 @@ function Card(props) {
             opacity: 1;
             font-size: 15px;
           }
+          @media (min-width: 500px) {
+            figure { margin: 20px 10px 10px;}
+          }
 
-          @media only screen and (max-width: 600px) {
-            
-            figure{ 
-              width: 250px; 
-              height: 400px;
-              margin: 15px 0px;
-            }
 
-            img {width: 90%; margin-bottom: 10px;}
-
-            p {height: 55px; margin-bottom: 0px; padding:0px}
-
-            button{font-size: 15px;}
-
-            h4 {
-              font-size: 1.2rem;
-              font-weight: 900;
-            }
-
-            button{
-              font-size: 16px;
-              padding: 10px 20px;
-            }
-
+          @media (min-width: 800px) {
+            figure{height: 450px;  margin: 20px 10px 10px; }
+            img {margin-bottom: 0px;}
+            p {height: 60px; margin-bottom: 5px;}
+            button{font-size: 18px;}
           }
 
         `}</style>

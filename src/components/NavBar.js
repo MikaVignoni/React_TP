@@ -23,8 +23,8 @@ const NavBar = () => {
       </ul>
 
       <div className="logo">
-        <img src="../img/Huella/Huellitas_Icon.png" alt="Logo"/>
-        <img src="../img/Logotipo/Logotipo_huellitas_negro.png" alt="Logo" />
+        <img src="../img/Huella/Huellitas_Icon.png" alt="Icono Huellitas"/>
+        <img src="../img/Logotipo/Logotipo_huellitas_negro.png" alt="Logotipo Huellitas" />
       </div>
 
       <div className="cart">
@@ -36,21 +36,19 @@ const NavBar = () => {
     <style jsx> {`
       .navbar {
         background-color: var(--colorPrincipal);
-        height: 120px;
+        height: 80px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding:0px;
+        padding: 0px;
         color: black;
         font-weight: bold;
       }
 
-      .logo img {  height: 60px;   padding-right: 20px; }
-
       .navbar-list {
         list-style-type: none;
         padding: 30px;
-        margin: 60px 0px;
+        margin: 20px 0px 0px;
         display: flex;
         display: none;  
         position: absolute;
@@ -66,30 +64,22 @@ const NavBar = () => {
       .navbar-list.open { display: flex;  transform: translateY(0); }
       .navbar-list li { margin-bottom: 10px; }
       .navbar-list li:last-child { margin-bottom: 0; }
-      .menu-toggle {  cursor: pointer;  padding: 0px 20px; }
-      .bar { width: 25px; height: 3px; background-color: black; margin: 3px 0; }
-      .cart {color: var(--colorText); opacity: 0.8; font-size: 10px; padding: 0px 20px; }
+      .menu-toggle {  cursor: pointer;  padding: 0px 20px; 
+        display: flex; 
+        flex-direction: column;
+        justify-content: space-between;
+        height: 25px;
+      }
+      .bar { width: 25px; height: 3px; background-color: var(--colorTexto); margin: 2px 0px; }
+      .cart {color: var(--colorText); font-size: 5px; padding: 0px; }
+      .logo img {height: 30px; padding: 0px 10px; }
 
-      @media screen and (max-width: 600px) 
-      {
-        .menu-toggle {
-          display: flex; 
-          flex-direction: column;
-          justify-content: space-between;
-          height: 30px; 
-        }
-        
-        .logo img {
-          height: 40px; 
-          padding-right: 10px;
-        }
-
-        .cart {
-          color: var(--colorText);
-          opacity: 0.8;
-          font-size: 5px;   
-          padding: 0px;
-        }
+      @media (min-width: 650px) {
+        .navbar { height: 100px;}
+        .cart { font-size: 10px; padding: 0px 20px; }
+        .logo img { height: 45px; }
+        .menu-toggle { height: 30px;}
+        .bar{width: 30px; margin: 3px 0px;}
       }
 
     `} </style>

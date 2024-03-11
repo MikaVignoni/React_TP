@@ -38,8 +38,7 @@ h2{
     font-size: 28px;
     font-family: "Kurale", serif;
     font-style: normal;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding: 25px 0px 5px;
     color: var(--colorPrincipal);
     text-align: center;
 }
@@ -48,7 +47,7 @@ h3{
     font-size: 22px;
     font-family: "Kurale", serif;
     font-style: normal;
-    padding-bottom: 10px;
+    padding: 10px 0px 5px;
     color: var(--colorDetalles);
 }
 
@@ -63,7 +62,7 @@ p {
     font-weight: 400; 
     font-size: 12px;
     line-height: 1.5;
-    padding: 10px 0px 30px;
+    padding: 5px 0px 5px;
     color: var(--colorTexto);
     text-align: justify;
 }
@@ -96,10 +95,6 @@ ul{
 }
 
 
-
-/* * * * * * *  FIN reset   * * * * * * */
-
-
 button{
     align-items: center;
     justify-content: center;
@@ -124,8 +119,21 @@ hr{
     p{
         font-size: 16px;
         line-height: 1.5;
-        padding: 10px 0px 50px;
+        padding: 5px 0px 5px;
+    }
 
+    span{
+        font-size: 16px;
+    }
+
+    h2{
+        font-size: 36px;
+        padding: 30px 0px 10px;
+    }
+    
+    h3{
+        font-size: 28px;
+        padding: 15px 0px 5px;
     }
 }
 
