@@ -10,13 +10,17 @@
 
 html {
     font-size: 16px;
-    font-family: sans-serif; /* Otra opcioón: Verdana, sans-serif; */
+    font-family: sans-serif;
     text-decoration: none;
-    background-color: var(--colorBackground);
+    background-color: #FFFFFF;
     --colorBackground: #F6F5F5;
-    --colorPrincipal: #DD8EA4;
+    --colorPrincipal: #ff61a3;
     --colorDetalles: #FEDD89;
-    --colorTexto: #31383F;
+    --colorTexto: #3196fb;
+/*  --colorTexto: #31383F;
+    --colorPrincipal: #DD8EA4;
+ */
+
 }
 
 body {
@@ -31,7 +35,6 @@ h1{
     font-family: "Kurale", serif;
     font-style: normal;
     padding-bottom: 12px;
-
 }
 
 h2{
@@ -40,7 +43,8 @@ h2{
     font-style: normal;
     padding-top: 20px;
     padding-bottom: 10px;
-
+    color: var(--colorPrincipal);
+    text-align: center;
 }
 
 h3{
@@ -48,18 +52,23 @@ h3{
     font-family: "Kurale", serif;
     font-style: normal;
     padding-bottom: 10px;
+    color: var(--colorDetalles);
 }
-
 
 h4 {
     font-family: sans-serif;
 }
 
+
+/* p CHECKEADO!! */
 p {
     font-family: "Inter", sans-serif;
     font-weight: 400; 
     font-size: 12px;
-    padding-bottom: 10px;
+    line-height: 1.5;
+    padding: 10px 0px 30px;
+    color: var(--colorTexto);
+    text-align: justify;
 }
 
 
@@ -67,6 +76,17 @@ a {
     text-decoration: none;
     color: black;
     line-height: 1.8rem;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding: 10px;
+}
+
+/* p CHECKEADO!! */
+span{
+    color: var(--colorTexto);
+    font-weight: 600;
+    font-size: 14px;
 }
 
 
@@ -82,4 +102,36 @@ ul{
 
 /* * * * * * *  FIN reset   * * * * * * */
 
+
+button{
+    align-items: center;
+    justify-content: center;
+    transition: 0.1s box-shadow ease-in-out;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 600;
+    box-shadow: -2px -2px 2px 0px #fff9, -2px -2px 2px 0px #fff9, 2px 2px 2px 0px #0001, 2px 2px 2px 0px #0001;
+    border: none;
+}
+
+hr{
+    width:95%; 
+    color: var(--colorTexto); 
+    margin: 10px 0px;
+}
+
+
+
+
+@media (min-width: 650px) {
+    p{
+        font-size: 16px;
+        line-height: 1.5;
+        padding: 10px 0px 50px;
+
+    }
+}
+
+@media (min-width: 800px) {
+}
 

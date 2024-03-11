@@ -3,8 +3,7 @@ import Layout from "../components/Layout";
 import ShoppingContextProvider from "../context/ShoppingContextProvider"
 
 export default function Tienda() {
-  return (
-  <>
+  return ( <>
     <Layout title={"HUELLITAS - Tienda Solidaria"}> 
 
       <ShoppingContextProvider>
@@ -17,14 +16,9 @@ export default function Tienda() {
 
         <Shopping />
 
-
       </ShoppingContextProvider>
 
     </Layout>
 
-    <style jsx> {`
-    `} </style>
-
-  </>
-  );
+  </> );
 }
