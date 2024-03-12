@@ -14,3 +14,7 @@ Para probar el proyecto ejecutar los siguientes comandos:
 
 
 Intento 3
+
+* notas para francisco
+librerias axios
+levantar api
