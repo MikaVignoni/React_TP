@@ -1,4 +1,3 @@
-import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -33,6 +32,18 @@ const Carousel = () => {
       </div>
       <div style={{ display: 'flex', justifyContent: 'center' }}>
         <img src="/img/AboutUs/AboutUs_6.png" alt="Imagen 6" style={{ width: '100%', height: 'auto' }} />
+      </div>
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <img src="/img/AboutUs/AboutUs_7.png" alt="Imagen 7" style={{ width: '100%', height: 'auto' }} />
+      </div>
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <img src="/img/AboutUs/AboutUs_8.png" alt="Imagen 8" style={{ width: '100%', height: 'auto' }} />
+      </div>
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <img src="/img/AboutUs/AboutUs_9.png" alt="Imagen 9" style={{ width: '100%', height: 'auto' }} />
+      </div>
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <img src="/img/AboutUs/AboutUs_0.png" alt="Imagen 10" style={{ width: '100%', height: 'auto' }} />
       </div>
     </Slider>
   );

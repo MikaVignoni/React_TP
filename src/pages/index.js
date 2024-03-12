@@ -14,10 +14,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <NavBar></NavBar>
-        <Inicio></Inicio>
-        <Footer></Footer>
-
+        <Inicio />
       </main>
       
     </>
