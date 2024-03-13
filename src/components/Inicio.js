@@ -6,14 +6,14 @@ const Inicio = () => {
   useEffect(() => {
     const landingPage = document.querySelector('.LandingPage');
     const imageUrlBase = "/img/Inicio/Inicio_";
-    const imageExtension = ".png";
+    const imageExtension = ".webp";
 
     function changeBackgroundImage() {
       landingPage.style.backgroundImage = `url('${imageUrlBase}${imageIndex}${imageExtension}')`;
       setImageIndex(prevIndex => (prevIndex % 3) + 1); 
     }
 
-    const intervalId = setInterval(changeBackgroundImage, 10000);
+    const intervalId = setInterval(changeBackgroundImage, 5000);
 
     return () => clearInterval(intervalId);
 
@@ -21,7 +21,7 @@ const Inicio = () => {
 
   return ( <>
     <div className="LandingPage">
-      <a href="/about_us">
+      <a href="/about_us"> 
 
         <div className="background-logo">
           <img src="/img/Logotipo/Logotipo_huellitas_negro.png" alt="Logo Huellitas" /> 
@@ -31,13 +31,12 @@ const Inicio = () => {
           <img src="/img/Huella/Huellitas_Icon.png" alt="Icon Huellitas" id='icon'/>
           <h1>Conocenos</h1>
         </div>
+      
       </a>
-
-    </div>
+    </div> 
 
     <style jsx>
     {`
-
       .Conocenos,
       .background-logo{
         position: absolute;
@@ -56,14 +55,12 @@ const Inicio = () => {
         justify-content: space-evenly; 
       }
 
-
       .background-logo{
         height: 65px;
         width: 255px;
         padding: 10px 30px;
         top: 50px;
         left: 50%;
-
       }
 
       img{

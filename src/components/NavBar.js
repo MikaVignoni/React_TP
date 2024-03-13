@@ -46,7 +46,6 @@ const NavBar = () => {
       }
 
       .navbar-list {
-        list-style-type: none;
         padding: 30px;
         margin: 20px 0px 0px;
         display: flex;
@@ -64,12 +63,8 @@ const NavBar = () => {
       .navbar-list.open { display: flex;  transform: translateY(0); }
       .navbar-list li { margin-bottom: 10px; }
       .navbar-list li:last-child { margin-bottom: 0; }
-      .menu-toggle {  cursor: pointer;  padding: 0px 20px; 
-        display: flex; 
-        flex-direction: column;
-        justify-content: space-between;
-        height: 25px;
-      }
+      .menu-toggle {  cursor: pointer;  padding: 0px 20px; display: flex;  flex-direction: column; justify-content: space-between; height: 25px;}
+
       .bar { width: 25px; height: 3px; background-color: var(--colorTexto); margin: 2px 0px; }
       .cart {color: var(--colorText); font-size: 5px; padding: 0px; }
       .logo img {height: 30px; padding: 0px 10px; }

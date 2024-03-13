@@ -8,8 +8,8 @@ const initialDb = {
     {
       id: "0",
       img: [
-        "/img/Shopping/Cama_Nido_1.png",
-        "/img/Shopping/Cama_Nido_2.png"
+        "/img/Shopping/Cama_Nido_1.webp",
+        "/img/Shopping/Cama_Nido_2.webp"
       ],
       name: "Cama Nido",
       price: 30000
@@ -17,8 +17,8 @@ const initialDb = {
     {
       id: 1,
       img: [
-        "/img/Shopping/Collar_Rosa_1.png",
-        "/img/Shopping/Collar_Rosa_2.png"
+        "/img/Shopping/Collar_Rosa_1.webp",
+        "/img/Shopping/Collar_Rosa_2.webp"
       ],
       name: "Collar Rosa",
       price: 3000
@@ -26,9 +26,9 @@ const initialDb = {
   ],
   cart: [{
     id: "000",
-    img: ["/img/Shopping/Cama_Nido_1.png"],
-    name: "TEST CART",
-    price: 333
+    img: ["/img/Huella/Huellitas_Icon.png"],
+    name: "LOADING CART...",
+    price: 1
   }]
 };
 

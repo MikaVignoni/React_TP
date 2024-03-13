@@ -45,7 +45,6 @@ function YourCart() {
             }
 
             @media (min-width: 800px) {
-                span{ font-size: 16px;}
                 .Title-Img{width: 82px; display:inline; visibility: hidden;}
                 .Title-Product{min-width:250px; text-align: left; padding-left: 10px;}
                 .Title-Qty{width:100px; }

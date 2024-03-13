@@ -1,6 +1,7 @@
-import YourCart from "../components/YourCart";
 import Layout from "../components/Layout";
 import ShoppingContextProvider from "../context/ShoppingContextProvider"
+import YourCart from "../components/YourCart";
+
 
 export default function Cart() {
   return (<>

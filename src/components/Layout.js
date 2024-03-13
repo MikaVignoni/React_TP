@@ -18,6 +18,7 @@ export default function Layout({title,children}) {
       <div className="Page-Content">
         {children}
       </div>
+
       <Footer />
 
     </main>
