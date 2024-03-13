@@ -43,7 +43,8 @@ const Formulario = () => {
         </form>
 
 
-        <style jsx>{`
+        <style jsx>
+        {`
             form {
                 max-width: 400px;
                 margin: 0 auto 30px;
@@ -81,7 +82,9 @@ const Formulario = () => {
             }
 
             button[type="submit"]:hover { background-color: #DD8EA4; }
-        `}</style>
+            
+        `}
+        </style>
     </>);
 }
 

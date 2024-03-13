@@ -1,139 +1,140 @@
 @import url('https://fonts.googleapis.com/css2?family=Kurale&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-/* * * * * * *   RESET   * * * * * * */ 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    font-size: 16px;
-    font-family: sans-serif;
-    text-decoration: none;
-    background-color: #FFFFFF;
-    --colorBackground: #F6F5F5;
-    --colorDetalles: #FEDD89;
-    --colorTexto: #31383F;
-    --colorPrincipal: #DD8EA4;
+  font-size: 16px;
+  font-family: sans-serif;
+  text-decoration: none;
+  background-color: #ffffff;
+  --colorBackground: #F6F5F5;
+  --colorDetalles: #FEDD89;
+  --colorTexto: #31383F;
+  --colorPrincipal: #DD8EA4;
 }
 
 body {
-    text-decoration: none;
-    letter-spacing: 0.8px;
-    overflow-x: hidden;
+  text-decoration: none;
+  letter-spacing: 0.8px;
+  overflow-x: hidden;
+  font-style: normal;
 }
 
+/* h1, h2, h3{
+
+} */
 
 h1{
-    font-size: 32px;
-    font-family: "Kurale", serif;
-    font-style: normal;
-    padding-bottom: 12px;
+  font-size: 32px;
+  font-family: "Kurale", serif;
 }
 
 h2{
-    font-size: 28px;
-    font-family: "Kurale", serif;
-    font-style: normal;
-    padding: 25px 0px 5px;
-    color: var(--colorPrincipal);
-    text-align: center;
+  font-size: 28px;
+  font-family: "Kurale", serif;
+  padding: 25px 0px 5px;
+  color: var(--colorPrincipal);
+  text-align: center;
 }
 
 h3{
-    font-size: 22px;
-    font-family: "Kurale", serif;
-    font-style: normal;
-    padding: 10px 0px 5px;
-    color: var(--colorDetalles);
+  font-size: 22px;
+  font-family: "Kurale", serif;
+  padding: 10px 0px 5px;
+  color: var(--colorDetalles);
 }
 
 h4 {
-    font-family: sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
+h1, p, a, span, hr {
+  color: var(--colorTexto);
+}
 
-/* p CHECKEADO!! */
 p {
-    font-family: "Inter", sans-serif;
-    font-weight: 400; 
-    font-size: 12px;
-    line-height: 1.5;
-    padding: 5px 0px 5px;
-    color: var(--colorTexto);
-    text-align: justify;
+  font-family: "Inter", sans-serif;
+  font-weight: 400; 
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 5px 0px 5px;
+  text-align: justify;
 }
 
 
 a {
-    text-decoration: none;
-    color: black;
-    line-height: 1.8rem;
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
-    padding: 10px;
+  text-decoration: none;
+  line-height: 1.8rem;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px;
 }
 
-/* span CHECKEADO!! */
 span{
-    color: var(--colorTexto);
-    font-weight: 600;
-    font-size: 14px;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 
 ul{
-    list-style-type: none;
+  list-style-type: none;
+}
+
+.LandingPage {
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .Page-Content{
-    padding: 0px 30px;
+  padding: 0px 30px;
 }
 
 
 button{
-    align-items: center;
-    justify-content: center;
-    transition: 0.1s box-shadow ease-in-out;
-    cursor: pointer;
-    border-radius: 5px;
-    font-weight: 600;
-    box-shadow: -2px -2px 2px 0px #fff9, -2px -2px 2px 0px #fff9, 2px 2px 2px 0px #0001, 2px 2px 2px 0px #0001;
-    border: none;
+  align-items: center;
+  justify-content: center;
+  transition: 0.1s box-shadow ease-in-out;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 600;
+  box-shadow: -2px -2px 2px 0px #fff9, -2px -2px 2px 0px #fff9, 2px 2px 2px 0px #0001, 2px 2px 2px 0px #0001;
+  border: none;
 }
 
 hr{
-    width:95%; 
-    color: var(--colorTexto); 
-    margin: 10px 0px;
+  width:95%; 
+  margin: 10px 0px;
 }
-
 
 
 
 @media (min-width: 650px) {
-    p{
-        font-size: 16px;
-        line-height: 1.5;
-        padding: 5px 0px 5px;
-    }
+  p{
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 5px 0px 5px;
+  }
 
-    span{
-        font-size: 16px;
-    }
+  span{
+    font-size: 16px;
+  }
 
-    h2{
-        font-size: 36px;
-        padding: 30px 0px 10px;
-    }
-    
-    h3{
-        font-size: 28px;
-        padding: 15px 0px 5px;
-    }
+  h2{
+    font-size: 36px;
+    padding: 30px 0px 10px;
+  }
+  
+  h3{
+    font-size: 28px;
+    padding: 15px 0px 5px;
+  }
 }
 
 @media (min-width: 800px) {

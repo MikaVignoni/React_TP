@@ -21,8 +21,8 @@ function CartListItem(props) {
 
 
   return ( <>
-    <li> 
-      <img src={item.img[0]} alt={item.name} />
+    <li className="CartList"> 
+      <img src={item.img[0]} alt={item.name} className="ProductImg"/>
 
       <span className="ProductNameScreens"> {item.name} </span>
       
@@ -49,9 +49,9 @@ function CartListItem(props) {
 
 
     <style jsx>{`
-      li {width: 100%; display: flex; flex-direction: row; justify-content: space-between; align-items: center; margin: 0px;}
+      .CartList {width: 100%; display: flex; flex-direction: row; justify-content: space-between; align-items: center; margin: 0px;}
 
-      img {width: 15%; max-width: 55px; object-fit: cover;  margin: 0px; border-radius: 10px;}
+      .ProductImg {width: 15%; max-width: 55px; object-fit: cover;  margin: 0px; border-radius: 10px;}
 
       .Price {display: none;}
 
@@ -75,12 +75,12 @@ function CartListItem(props) {
 
 
       @media (min-width: 650px) {
-        img {width:20%; max-width:82px;}
+        .ProductImg {width:20%; max-width:82px;}
         .Price {display:inline; width:10vw; min-width:65px; text-align:center;}
       }
 
       @media (min-width: 800px) {
-        img {width: 82px;}
+        .ProductImg {width: 82px;}
         span {font-size: 14px;}
         .ProductNameScreens {display:inline; width:250px; text-align:left; padding-left:10px;}
         .ProductName {display:none;}
@@ -96,9 +96,10 @@ function CartListItem(props) {
         .TrashIcon:hover {color: var(--colorPrincipal); opacity: 1;}
       }
 
+
     `}</style>
 
   </> )
-  }
+}
   
   export default CartListItem
