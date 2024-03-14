@@ -58,7 +58,7 @@ function CartListItem(props) {
       .ItemQty {padding: 0px 5px; text-align: center;}
       .SubTotalPrice {width:10vw; min-width: 65px; text-align:center;}
       .TrashIcon {width: 20px; height: 20px; margin: 0px 5px; background: none; box-shadow: none;}
-      #btn_add, #btn_delete {width: 25px; height: 25px; opacity: 0.8; margin: 5px 5px 0px; padding: 0px;}
+      button {width: 25px; height: 25px; opacity: 0.8; margin: 5px 5px 0px; padding: 0px;}
       .ProductNameScreens {display: none;}
 
       @media (min-width: 650px) {
@@ -73,9 +73,9 @@ function CartListItem(props) {
         .Name-Qty {width:100px; flex-direction:row; justify-content:center;}
         .Qty {width:100px;}
 
-        #btn_add, #btn_delete  {font-size: 16px; width: 30px; height:30px; margin:0px 10px;}
-        #btn_add, #btn_delete :hover {transform:translateY(1px); box-shadow:none;}
-        #btn_add, #btn_delete :active {color: #a5b1c6; opacity:1; font-size:12px; box-shadow:inset -2px -2px 3px 0px #fff9, inset -2px -2px 3px 0px #fff9, inset 2px 2px 3px 0px #0003, inset 2px 2px 3px 0px #0001; }
+        button {font-size: 16px; width: 30px; height:30px; margin:0px 6px;}
+        button:hover {transform:translateY(1px); box-shadow:none;}
+        button:active {color: #a5b1c6; opacity:1; font-size:12px; box-shadow:inset -2px -2px 3px 0px #fff9, inset -2px -2px 3px 0px #fff9, inset 2px 2px 3px 0px #0003, inset 2px 2px 3px 0px #0001; }
 
         .TrashIcon {width: 25px; height: 25px;}
         .TrashIcon:active {box-shadow: none; opacity: 1; color: var(--colorPrincipal);}

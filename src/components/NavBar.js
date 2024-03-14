@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import ShoppingCart from './icons/ShoppingCart';
+import ShoppingContextProvider from "../context/ShoppingContextProvider"
+
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -9,29 +11,31 @@ const NavBar = () => {
   };
 
   return ( <>
-    <nav className="navbar">
-      <div className="menu-toggle" onClick={toggleMenu}>
-        <div className="bar"></div>
-        <div className="bar"></div>
-        <div className="bar"></div>
-      </div>
+    <ShoppingContextProvider>
+      <nav className="navbar">
+        <div className="menu-toggle" onClick={toggleMenu}>
+          <div className="bar"></div>
+          <div className="bar"></div>
+          <div className="bar"></div>
+        </div>
 
-      <ul className={menuOpen ? "navbar-list open" : "navbar-list"}>
-        <li> <a href="/"> Inicio </a> </li>
-        <li> <a href="/about_us"> Sobre Nosotros </a> </li>
-        <li> <a href="/tienda"> Tienda Solidaria </a> </li>
-      </ul>
+        <ul className={menuOpen ? "navbar-list open" : "navbar-list"}>
+          <li> <a href="/"> Inicio </a> </li>
+          <li> <a href="/about_us"> Sobre Nosotros </a> </li>
+          <li> <a href="/tienda"> Tienda Solidaria </a> </li>
+        </ul>
 
-      <div className="logo">
-        <img src="../img/Huella/Huellitas_Icon.png" alt="Icono Huellitas"/>
-        <img src="../img/Logotipo/Logotipo_huellitas_negro.png" alt="Logotipo Huellitas" />
-      </div>
+        <div className="logo">
+          <img src="../img/Huella/Huellitas_Icon.png" alt="Icono Huellitas"/>
+          <img src="../img/Logotipo/Logotipo_huellitas_negro.png" alt="Logotipo Huellitas" />
+        </div>
 
-      <div className="cart">
-        <a href="/cart" > <ShoppingCart />  </a>
-      </div>
+        <div className="cart">
+          <a href="/cart" > <ShoppingCart />  </a>
+        </div>
 
-    </nav>
+      </nav>
+    </ShoppingContextProvider>
 
     <style jsx> {`
       .navbar {
