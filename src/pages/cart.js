@@ -1,5 +1,5 @@
 import Layout from "../components/Layout";
-import ShoppingContextProvider from "../context/ShoppingContextProvider"
+// import ShoppingContextProvider from "../context/ShoppingContextProvider"
 import YourCart from "../components/YourCart";
 
 
@@ -7,7 +7,7 @@ export default function Cart() {
   return (<>
     <Layout title={"HUELLITAS - Carrito"}> 
 
-      <ShoppingContextProvider>
+      {/* <ShoppingContextProvider> */}
 
         <h2>Carrito de Compras</h2>
 
@@ -16,7 +16,7 @@ export default function Cart() {
 
         <YourCart />
 
-      </ShoppingContextProvider>
+      {/* </ShoppingContextProvider> */}
 
     </Layout>
 

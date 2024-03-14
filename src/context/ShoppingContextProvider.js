@@ -18,33 +18,36 @@ const initialDb = {
       price: 3000
     }
   ],
-  cart: [{
-    id: "000",
-    img: "/img/Huella/Huellitas_Icon.png",
-    name: "LOADING CART...",
-    price: 1
-  }]
+  cart: []
 };
-
-const ItemsInCart = 0;
-const TotalCartPrice = 0;
 
 const ENDPOINTS = {
     products: `http://localhost:5000/products`,
-    cart: `http://localhost:5000/cart`
+    cart: `http://localhost:5000/cart`,
 }
 
 const ShoppingContextProvider = (props) => {
 
   const [db, setDb] = useState (initialDb);
   const {products, cart} = db; 
+  const [infoCartState, setInfoCartState] = useState({ ItemsInCart: 0, TotalCartPrice: 0 });
 
   const READ_DATA = async () => {
     const responseProducts = await axios.get(ENDPOINTS.products), 
       responseCart = await axios.get(ENDPOINTS.cart);
 
     const productsList = await responseProducts.data,
-      cartList = await responseCart.data;
+      cartList = await responseCart.data;    
+
+    const { ItemsInCart, TotalCartPrice } = cartList.reduce((accumulator, item) => {
+      const qty = parseInt(item.qty, 10);
+      const price = parseInt(item.price, 10)
+      accumulator.ItemsInCart += qty;
+      accumulator.TotalCartPrice += qty * price;
+      return accumulator;
+    }, { ItemsInCart: 0, TotalCartPrice: 0 });
+
+    setInfoCartState({ ItemsInCart, TotalCartPrice });
 
     const data = {
         products: productsList,
@@ -52,7 +55,6 @@ const ShoppingContextProvider = (props) => {
     };
 
     setDb(data)
-
   };
 
   const CREATE_ITEM_IN_CART = async (item) => {
@@ -77,7 +79,7 @@ const ShoppingContextProvider = (props) => {
     const OPTIONS = {
       method: "PUT",
       headers: { "Content-Type" : "application/json" },
-      data: JSON.stringify(itemIsInCart)  // TO CHECK! quiero almacenar el dato como numero, no como string
+      data: JSON.stringify(itemIsInCart) 
     }
 
     const ENDPOINT = `${ENDPOINTS.cart}/${itemIsInCart.id}`
@@ -93,8 +95,8 @@ const ShoppingContextProvider = (props) => {
     else {
       const itemIsInCart = db.cart.find(item => item.id === idSelected)
       itemIsInCart
-        ? UPDATE_ITEM_IN_CART(itemIsInCart) // si existe el item tengo q hacer un update con PUT >> llamar a update_item_in_cart
-        : CREATE_ITEM_IN_CART(item); // si no existe el item tengo q hacer un POST >> llamar a CREATE_ITEM_IN_CART
+        ? UPDATE_ITEM_IN_CART(itemIsInCart) 
+        : CREATE_ITEM_IN_CART(item);
       }
   };
 
@@ -137,7 +139,7 @@ const ShoppingContextProvider = (props) => {
     READ_DATA();
   };
 
-  const value = {db, READ_DATA, ADD_ITEM_TO_CART, DELETE_ITEM_IN_CART, DELETE_ONE_ITEM_IN_CART, ItemsInCart, TotalCartPrice};
+  const value = {db, READ_DATA, ADD_ITEM_TO_CART, DELETE_ITEM_IN_CART, DELETE_ONE_ITEM_IN_CART, infoCartState};
 
   return (
     <ShoppingContext.Provider value = {value} >

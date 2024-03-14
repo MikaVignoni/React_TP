@@ -1,6 +1,7 @@
 import NavBar from "../components/NavBar"
 import Footer  from "../components/Footer";
 import Head from 'next/head'
+import ShoppingContextProvider from "../context/ShoppingContextProvider"
 
 
 export default function Layout({title,children}) {
@@ -13,11 +14,13 @@ export default function Layout({title,children}) {
     </Head>
     
     <main>
+      <ShoppingContextProvider>
       
       <NavBar />
       <div className="Page-Content">
         {children}
       </div>
+      </ShoppingContextProvider>
 
       <Footer />
 

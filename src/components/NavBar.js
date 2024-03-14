@@ -1,17 +1,19 @@
-import { useState } from 'react';
+import { useState, useContext, useEffect } from 'react';
 import ShoppingCart from './icons/ShoppingCart';
-import ShoppingContextProvider from "../context/ShoppingContextProvider"
+import { ShoppingContext } from "../context/ShoppingContextProvider"
 
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
+  const toggleMenu = () => { setMenuOpen(!menuOpen); };
+
+  const {READ_DATA, infoCartState } = useContext(ShoppingContext);
+  useEffect(() => {READ_DATA()}, []);
+  const { ItemsInCart } = infoCartState;
+
 
   return ( <>
-    <ShoppingContextProvider>
       <nav className="navbar">
         <div className="menu-toggle" onClick={toggleMenu}>
           <div className="bar"></div>
@@ -31,11 +33,11 @@ const NavBar = () => {
         </div>
 
         <div className="cart">
+          <div id='ItemsInCart'> <p id='NumberItems'>{ItemsInCart}</p> </div>
           <a href="/cart" > <ShoppingCart />  </a>
         </div>
 
       </nav>
-    </ShoppingContextProvider>
 
     <style jsx> {`
       .navbar {
@@ -70,8 +72,21 @@ const NavBar = () => {
       .menu-toggle {  cursor: pointer;  padding: 0px 20px; display: flex;  flex-direction: column; justify-content: space-between; height: 25px;}
 
       .bar { width: 25px; height: 3px; background-color: var(--colorTexto); margin: 2px 0px; }
-      .cart {color: var(--colorText); font-size: 5px; padding: 0px; }
+      .cart {color: var(--colorText); font-size: 5px; padding-right: 15px;}
       .logo img {height: 30px; padding: 0px 10px; }
+      #ItemsInCart{
+        border-radius: 50%; 
+        background: var(--colorTexto); 
+        height:25px; width: 25px; 
+        display: flex; 
+        align-items: center; 
+        justify-content:center; 
+        z-index: 1001;
+        transform: translate(120%, 40%);
+      }
+
+      #NumberItems{color: var(--colorDetalles);   font-size: 13px;}
+
 
       @media (min-width: 650px) {
         .navbar { height: 100px;}

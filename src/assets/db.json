@@ -23,7 +23,7 @@
     },
     {
       "id": "3",
-      "img":"/img/Shopping/Manta_Gris_1.webp",
+      "img": "/img/Shopping/Manta_Gris_1.webp",
       "name": "Manta Gris",
       "description": "Corderito sintético y gabardina.\nApto lavarropas.\n100cm x 80cm",
       "price": 260
@@ -57,7 +57,7 @@
       "name": "Cama Nido",
       "description": "Rellena de vellón siliconado. \nApto lavarropas.\nTamaño: 50cm x 25cm",
       "price": 300,
-      "qty": 1
+      "qty": 4
     },
     {
       "id": "1",
@@ -65,7 +65,7 @@
       "name": "Collar Rosa",
       "description": "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
       "price": 30,
-      "qty": 1
+      "qty": 12
     }
   ]
 }

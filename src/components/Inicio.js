@@ -40,7 +40,6 @@ const Inicio = () => {
       .Conocenos,
       .background-logo{
         position: absolute;
-        z-index: 1000;
         background:  #FFFFFF80;
         transform: translate(-50%, -0%);
       }

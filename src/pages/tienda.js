@@ -1,12 +1,12 @@
 import Shopping from "../components/Shopping";
 import Layout from "../components/Layout";
-import ShoppingContextProvider from "../context/ShoppingContextProvider"
+// import ShoppingContextProvider from "../context/ShoppingContextProvider"
 
 export default function Tienda() {
   return ( <>
     <Layout title={"HUELLITAS - Tienda Solidaria"}> 
 
-      <ShoppingContextProvider>
+      {/* <ShoppingContextProvider> */}
 
         <h2>Tienda Solidaria</h2>
 
@@ -16,7 +16,7 @@ export default function Tienda() {
 
         <Shopping />
 
-      </ShoppingContextProvider>
+      {/* </ShoppingContextProvider> */}
 
     </Layout>
 
