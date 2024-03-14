@@ -29,11 +29,3 @@ function Shopping() {
 }
 
 export default Shopping
-
-
-
-
-
-
-
-
