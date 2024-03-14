@@ -27,10 +27,10 @@ const NavBar = () => {
           <li> <a href="/tienda"> Tienda Solidaria </a> </li>
         </ul>
 
-        <div className="logo">
+        <a className="logo" href="/">
           <img src="../img/Huella/Huellitas_Icon.png" alt="Icono Huellitas"/>
           <img src="../img/Logotipo/Logotipo_huellitas_negro.png" alt="Logotipo Huellitas" />
-        </div>
+        </a>
 
         <div className="cart">
           <div id='ItemsInCart'> <p id='NumberItems'>{ItemsInCart}</p> </div>
