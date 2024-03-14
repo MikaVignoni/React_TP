@@ -100,7 +100,11 @@ button{
   box-shadow: -2px -2px 2px 0px #fff9, -2px -2px 2px 0px #fff9, 2px 2px 2px 0px #0001, 2px 2px 2px 0px #0001;
   border: none;
   color: var(--colorTexto);
+  font-weight: bold;
 }
+
+button:hover{ background-color: var(--colorPrincipal); }
+
 
 hr{
   width:95%; 
@@ -114,4 +118,3 @@ hr{
   h2{ font-size: 36px; padding: 30px 0px 10px; }
   h3{ font-size: 28px; padding: 15px 0px 5px; }
 }
-

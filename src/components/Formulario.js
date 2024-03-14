@@ -74,14 +74,10 @@ const Formulario = () => {
                 width: 100%;
                 padding: 10px;
                 border: none;
-                border-radius: 5px;
                 background-color: var(--colorDetalles);
-                color: black;
-                font-weight: bold;
-                cursor: pointer;
             }
 
-            button[type="submit"]:hover { background-color: #DD8EA4; }
+            button[type="submit"]:hover { background-color: var(--colorPrincipal); }
             
         `}
         </style>
