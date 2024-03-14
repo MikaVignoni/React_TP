@@ -22,7 +22,7 @@ function CartListItem(props) {
 
   return ( <>
     <li className="CartList"> 
-      <img src={item.img[0]} alt={item.name} className="ProductImg"/>
+      <img src={item.img} alt={item.name} className="ProductImg"/>
 
       <span className="ProductNameScreens"> {item.name} </span>
       

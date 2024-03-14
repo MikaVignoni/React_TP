@@ -15,7 +15,7 @@ function Card(props) {
   return ( <>
     <figure>
 
-      <img  key= {product.id} src={product.img[0]} alt={product.name} />
+      <img  key= {product.id} src={product.img} alt={product.name} />
       
       <figcaption>
         <h4 className="product_name"> {product.name} </h4>

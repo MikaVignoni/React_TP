@@ -9,7 +9,7 @@
     },
     {
       "id": "1",
-      "img":"/img/Shopping/Collar_Rosa_1.webp",
+      "img": "/img/Shopping/Collar_Rosa_1.webp",
       "name": "Collar Rosa",
       "description": "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
       "price": 30
@@ -23,34 +23,28 @@
     },
     {
       "id": "3",
-      "img": [
-        "/img/Shopping/Manta_Gris_1.webp",
-        "/img/Shopping/Manta_Gris_2.webp"
-      ],
+      "img":"/img/Shopping/Manta_Gris_1.webp",
       "name": "Manta Gris",
       "description": "Corderito sintético y gabardina.\nApto lavarropas.\n100cm x 80cm",
       "price": 260
     },
     {
       "id": "4",
-      "img": [
-        "/img/Shopping/Plato_1.webp",
-        "/img/Shopping/Plato_2.webp"
-      ],
+      "img": "/img/Shopping/Plato_1.webp",
       "name": "Plato",
       "description": "Platos cerámicos con relieve.\nCada plato se vende por separado\nFáciles de limpiar.",
       "price": 150
     },
     {
       "id": "5",
-      "img":  "/img/Shopping/Cama_Dona_1.webp",
+      "img": "/img/Shopping/Cama_Dona_1.webp",
       "name": "Cama Dona",
       "description": "Corderito sintético y gabardina. \nApto lavarropas.\nTamaño: 90cm x 35cm",
       "price": 320
     },
     {
       "id": "6",
-      "img":  "/img/Shopping/Casa_Gato_1.webp",
+      "img": "/img/Shopping/Casa_Gato_1.webp",
       "name": "Casa para Gatos",
       "description": "Refugio suave para tu gato.\nExterior de gabardina.\nFondo antideslizante.",
       "price": 350
@@ -58,11 +52,20 @@
   ],
   "cart": [
     {
-      "id": "6",
-      "img":  "/img/Shopping/Casa_Gato_1.webp",
-      "name": "Casa para Gatos",
-      "description": "Refugio suave para tu gato.\nExterior de gabardina.\nFondo antideslizante.",
-      "price": 350
+      "id": "0",
+      "img": "/img/Shopping/Cama_Nido_1.webp",
+      "name": "Cama Nido",
+      "description": "Rellena de vellón siliconado. \nApto lavarropas.\nTamaño: 50cm x 25cm",
+      "price": 300,
+      "qty": 1
+    },
+    {
+      "id": "1",
+      "img": "/img/Shopping/Collar_Rosa_1.webp",
+      "name": "Collar Rosa",
+      "description": "Tamaño Mediano\nOpcion: Placa personalizada\n30-45cm x 2,5cm ancho.",
+      "price": 30,
+      "qty": 1
     }
   ]
 }
