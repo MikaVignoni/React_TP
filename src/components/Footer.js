@@ -1,4 +1,3 @@
-
 import Link from 'next/link';
 import Mail from './icons/Mail';
 import Facebook from './icons/Facebook';

@@ -22,8 +22,9 @@ const initialDb = {
 };
 
 const ENDPOINTS = {
-    products: `http://localhost:5000/products`,
+    products: `http://localhost:5000/products`, 
     cart: `http://localhost:5000/cart`,
+    //products: "http://localhost:5000/api/products",
 }
 
 const ShoppingContextProvider = (props) => {
@@ -35,6 +36,8 @@ const ShoppingContextProvider = (props) => {
   const READ_DATA = async () => {
     const responseProducts = await axios.get(ENDPOINTS.products), 
       responseCart = await axios.get(ENDPOINTS.cart);
+
+      console.log(responseProducts.data)
 
     const productsList = await responseProducts.data,
       cartList = await responseCart.data;    
