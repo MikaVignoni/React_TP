@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "start:prod": "npm run build && npm run apilocal",
     "lint": "next lint",
     "apilocal": "json-server --port 5000 --watch src/assets/db.json"
   },
